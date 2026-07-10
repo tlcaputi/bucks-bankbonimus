@@ -1,0 +1,90 @@
+title: "Museums Near New Hope — a Bucks-Area Guide"
+description: "Every museum, historic house, and visitor center within about a 45-minute drive of New Hope, Pennsylvania — with current hours, admission, websites, and a map. Bucks County, Hunterdon, Doylestown, Lambertville, Princeton & Trenton."
+baseurl: ""
+url: "https://bucks.bankbonimus.com"
+og_image: "https://media.bankbonimus.com/images/bankbonimus-avatar.png"
+locale: "en_US"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  museums:
+    output: true
+    permalink: /museum/:name/
+    # Pre-sort by name here so templates never call Liquid `sort` on
+    # collection docs — GitHub Pages' Jekyll 3.10 crashes on that.
+    sort_by: name
+
+include:
+  - CNAME
+
+exclude:
+  - drafts/
+  - vendor/
+  - .CHANGELOG/
+  - .research/
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+  - gen_museums.py
+  - _Gemfile.bak
+  - .DS_Store
+  - "**/.DS_Store"
+
+# Image CDN: shared bankbonimus R2 media
+assets_cdn: https://media.bankbonimus.com
+
+author:
+  name: "Bankbonimus"
+  avatar: "https://media.bankbonimus.com/images/bankbonimus-avatar.png"
+
+# Reference point for drive-time estimates (downtown New Hope, PA).
+# The exact starting address is intentionally NOT stored here.
+origin:
+  label: "New Hope, PA"
+  lat: 40.3640
+  lng: -74.9510
+
+# Category labels + order for filters/badges.
+# NB: key is `museum_types`, NOT `categories` — `site.categories` is a reserved
+# Jekyll variable (posts grouped by category) and would shadow this.
+museum_types:
+  - id: history
+    label: "History"
+  - id: house-museum
+    label: "Historic House"
+  - id: art
+    label: "Art & Design"
+  - id: living-history
+    label: "Living History"
+  - id: specialty
+    label: "Specialty & Odd"
+  - id: science-nature
+    label: "Science & Nature"
+  - id: military
+    label: "Military"
+
+# Regions (map colors + labels), ordered near → far from New Hope
+regions:
+  - id: new-hope
+    label: "New Hope & Washington Crossing"
+    color: "#24433b"
+    blurb: "Downtown New Hope plus the Delaware-crossing sites just south — Parry Mansion, Nakashima, Thompson-Neely and the Washington Crossing parks on both riverbanks."
+  - id: lambertville
+    label: "Lambertville, Stockton & Hunterdon (NJ)"
+    color: "#3a6ea5"
+    blurb: "Straight across the bridge and up the New Jersey side of the river — Lambertville, Stockton, Frenchtown, Flemington and Clinton in Hunterdon County."
+  - id: doylestown
+    label: "Doylestown & Central Bucks (PA)"
+    color: "#9a4a2f"
+    blurb: "The Mercer 'castles' — Mercer Museum, Fonthill and the Tile Works — plus the Michener art museum and the county-seat sites around Doylestown."
+  - id: lower-bucks
+    label: "Newtown & Lower Bucks (PA)"
+    color: "#b0873f"
+    blurb: "South toward the river towns — Newtown, Yardley, Langhorne, Fallsington and Morrisville, including Pennsbury Manor and William Penn country."
+  - id: princeton
+    label: "Princeton, Trenton & Hopewell (NJ)"
+    color: "#6a4a7a"
+    blurb: "The outer edge of the 45-minute radius — Princeton's house museums, the Trenton state-capital museums and Grounds For Sculpture in Hamilton."

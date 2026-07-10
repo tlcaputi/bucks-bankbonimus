@@ -1,0 +1,1165 @@
+# Museums within ~45 min of New Hope, PA — single source of truth.
+# Every entry's hours/admission were verified against the `source:` URL during a
+# research pass. Values that could not be confirmed are left as "UNKNOWN — confirm"
+# rather than guessed; seasonal / appointment-only sites are flagged. Confirm on the
+# museum's own site before visiting. Run `python3 gen_museums.py` after editing.
+
+# ============================================================
+# NEW HOPE & WASHINGTON CROSSING
+# ============================================================
+- id: parry-mansion-museum
+  name: "Parry Mansion Museum"
+  category: house-museum
+  region: new-hope
+  town: "New Hope, PA"
+  address: "45 South Main Street, New Hope, PA 18938"
+  lat: 40.362964
+  lng: -74.951361
+  website: "https://www.newhopehistorical.org/parry-mansion"
+  phone: "215-862-5652"
+  admission: "$15 adults"
+  hours: "Seasonal, Apr–Dec. Fri 4–6pm (tours 4 & 5); Sat–Sun 12–6pm (tours on the hour, last 5pm). Closed Jan–Mar."
+  drive_min: 2
+  seasonal: true
+  appointment_only: false
+  featured: true
+  source: "https://www.newhopehistorical.org/house-tours"
+  blurb: "An 18th-century (1784) merchant's mansion built by New Hope founder Benjamin Parry, now a house museum run by the New Hope Historical Society. Rooms are furnished to show 125 years (1775–1900) of the family's changing tastes via short guided tours. A quick, walkable stop right on Main Street."
+
+- id: nightmare-in-new-hope
+  name: "A Nightmare in New Hope"
+  category: specialty
+  region: new-hope
+  town: "New Hope, PA"
+  address: "20 South Main Street, Lower Level, New Hope, PA 18938"
+  lat: 40.3641183
+  lng: -74.9506665
+  website: "https://nightmareinnewhope.com/"
+  phone: "267-291-4587"
+  admission: "Free with any shop purchase; $10/person gallery-only"
+  hours: "Sat 12–7pm; Sun 12–6pm. Closed Mon–Fri. Year-round."
+  drive_min: 2
+  seasonal: false
+  appointment_only: false
+  source: "https://nightmareinnewhope.com/contact"
+  blurb: "A curated shop and 'underground vault' gallery of genuine screen-used horror-movie props, costumes, and medical oddities in a South Main Street basement. Equal parts pop-culture museum and oddities shop — an offbeat counterpoint to the historic-house circuit. Weekend-only hours."
+
+- id: bucks-county-childrens-museum
+  name: "Bucks County Children's Museum"
+  category: specialty
+  region: new-hope
+  town: "New Hope, PA"
+  address: "500 Union Square Drive, New Hope, PA 18938"
+  lat: 40.3661647
+  lng: -74.9547543
+  website: "https://buckskids.org/"
+  phone: "215-693-1290"
+  admission: "$9 general; $5 veterans; $3 EBT/SNAP/WIC; members free"
+  hours: "Tue–Fri 10am–4pm; Sat 10am–3:30pm; Sun 10am–4pm; closed Mon. Year-round. Advance ticketing recommended."
+  drive_min: 3
+  seasonal: false
+  appointment_only: false
+  source: "https://buckskids.org/plan-your-visit/"
+  blurb: "A hands-on children's museum in the Union Square complex, built for young kids (roughly ages 1–6) with interactive, play-based exhibits. A good rainy-day or toddler/preschooler stop a short drive from Main Street. Book online in advance — walk-up entry isn't guaranteed."
+
+- id: nakashima-woodworkers
+  name: "George Nakashima Woodworkers"
+  category: art
+  region: new-hope
+  town: "New Hope, PA"
+  address: "1847 Aquetong Rd, New Hope, PA 18938"
+  lat: 40.3402
+  lng: -74.9556
+  website: "https://nakashimawoodworkers.com/"
+  phone: "215-862-2272"
+  admission: "Free (showroom, by appointment); Foundation tours ~$75–$150 — confirm"
+  hours: "Saturday open house DISCONTINUED. Studio/showroom by appointment only, Mon–Thu 9am–5pm. Foundation runs seasonal ticketed tours (Apr–Oct); 2026 tours reported sold out."
+  drive_min: 7
+  seasonal: true
+  appointment_only: true
+  featured: true
+  source: "https://nakashimawoodworkers.com/visit/"
+  blurb: "Working studio and National Historic Landmark complex built by master woodworker George Nakashima, now run by his daughter Mira; buildings, furniture, and grounds are largely as he left them. A must for design/craft fans, but NOT a walk-in museum — the free Saturday open house has ended, so visiting needs an appointment or a reserved Foundation tour seat."
+
+- id: locktenders-house-new-hope
+  name: "Locktender's House (Delaware Canal State Park)"
+  category: history
+  region: new-hope
+  town: "New Hope, PA"
+  address: "145 South Main Street, New Hope, PA 18938"
+  lat: 40.359
+  lng: -74.951
+  website: "https://fodc.org/visit/locktenders-house/"
+  phone: "215-862-2021"
+  admission: "UNKNOWN — confirm"
+  hours: "Mon–Fri 11am–4pm year-round; also Sat–Sun 11am–4pm May 1–Oct 31 (weekend hours seasonal)."
+  drive_min: 3
+  seasonal: true
+  appointment_only: false
+  source: "https://fodc.org/visit/locktenders-house/"
+  blurb: "Delaware Canal State Park's first interpretive center, in a restored early-1800s locktender's cottage on New Hope's Main Street. 'Life at the Lock' exhibits show how mule-drawn boats and lock-keepers worked the canal 1832–1932; it also serves as HQ for the Friends of the Delaware Canal. Pairs well with a towpath stroll."
+
+- id: bowmans-hill-wildflower-preserve
+  name: "Bowman's Hill Wildflower Preserve"
+  category: science-nature
+  region: new-hope
+  town: "New Hope, PA"
+  address: "1635 River Road, New Hope, PA 18938"
+  lat: 40.3301
+  lng: -74.9406
+  website: "https://bhwp.org/"
+  phone: "215-862-2924"
+  admission: "$12 adults"
+  hours: "Apr–Jun daily 9am–5pm (last adm. 4pm); Jul–Mar Wed–Mon 9am–5pm, closed Tue; closed major holidays."
+  drive_min: 8
+  seasonal: true
+  appointment_only: false
+  source: "https://bhwp.org/visit/plan-your-visit/hours-and-admission/"
+  blurb: "A 134-acre native-plant preserve and National Natural Landmark near Washington Crossing, with a Visitor Center offering exhibits, a gift shop, and educational programs plus miles of woodland trails. More nature center than museum, but its interpretive programming and proximity to the Washington Crossing sites fit the area."
+
+- id: solebury-township-historical-society
+  name: "Solebury Township Historical Society"
+  category: history
+  region: new-hope
+  town: "Solebury, PA"
+  address: "3016 North Sugan Road, Solebury, PA 18963"
+  lat: 40.3806
+  lng: -75.0083
+  website: "https://soleburyhistory.org/"
+  phone: "215-297-5091"
+  admission: "UNKNOWN — confirm"
+  hours: "Wednesdays 10am–12pm; also by appointment."
+  drive_min: 9
+  seasonal: false
+  appointment_only: false
+  source: "https://soleburyhistory.org/"
+  blurb: "An 1865 one-room schoolhouse in Solebury Village serving as the township historical society's HQ, archive, and small museum of local artifacts, photos, and maps spanning 200+ years. Best for house-history and genealogy research, though the schoolhouse itself is worth a quick look during its limited open hours."
+
+- id: stover-mill-museum
+  name: "Stover Mill Museum & Gallery"
+  category: living-history
+  region: new-hope
+  town: "Erwinna, PA"
+  address: "852 River Road (PA Route 32), Erwinna, PA 18920"
+  lat: 40.4965
+  lng: -75.068
+  website: "https://tinicumcivicassociation.org/about-the-stover-mill/"
+  phone: "610-294-9420"
+  admission: "Free (open house)"
+  hours: "Weekends 12–4pm, Jun–Oct; special 'Milling Days' on select Sundays."
+  drive_min: 18
+  seasonal: true
+  appointment_only: false
+  source: "https://tinicumcivicassociation.org/about-the-stover-mill/"
+  blurb: "A water-powered gristmill built in 1800 and worked until 1955, on Tohickon Creek in Tinicum Park. Most original millworks (four sets of millstones, two rare metal turbines) remain in place, with a second-floor museum of 19th/early-20th-century milling and canal-trade tools. 'Milling Days' let visitors watch the machinery run."
+
+- id: thompson-neely-house
+  name: "Thompson-Neely House & Grist Mill"
+  category: house-museum
+  region: new-hope
+  town: "Washington Crossing, PA"
+  address: "River Road (PA-32), Washington Crossing Historic Park – Upper Park, Washington Crossing, PA 18977"
+  lat: 40.3313
+  lng: -74.9383
+  website: "https://www.washingtoncrossingpark.org/park/thompson-neely-house-farmstead-upper-park/"
+  phone: "215-493-4076"
+  admission: "UNKNOWN — confirm (guided tour, ~$6–$12 cited)"
+  hours: "Seasonal guided-tour only, Apr–Nov, booking required. Official pages conflict on times — verify. Closed Dec–Mar."
+  drive_min: 12
+  seasonal: true
+  appointment_only: true
+  source: "https://www.washingtoncrossingpark.org/tickets/"
+  blurb: "A 1702 farmhouse that served as a Continental Army field hospital before Washington's 1776 crossing, plus a working 1830s water-powered grist mill on the same farmstead. Revolutionary War history in a rural setting, accessible only via a timed, pre-booked guided tour that runs seasonally."
+
+- id: washington-crossing-visitor-center-pa
+  name: "Washington Crossing Historic Park Visitor Center (PA)"
+  category: history
+  region: new-hope
+  town: "Washington Crossing, PA"
+  address: "1112 River Road, Washington Crossing, PA 18977"
+  lat: 40.295
+  lng: -74.87205
+  website: "https://www.washingtoncrossingpark.org/"
+  phone: "215-493-4076"
+  admission: "Free"
+  hours: "Visitor Center daily 10am–5pm, year-round. Grounds dawn–dusk. Ticketed building & Bowman's Hill Tower tours seasonal (Apr–Nov)."
+  drive_min: 17
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://www.washingtoncrossingpark.org/"
+  blurb: "The main orientation point for the park where Washington's army crossed the Delaware on Christmas 1776 to launch the Battle of Trenton. The visitor center (exhibits, museum shop, park info) is free and open year-round daily — a reliable anchor stop even outside the seasonal tour window."
+
+- id: washington-crossing-museum-nj
+  name: "Washington Crossing State Park Museum (NJ)"
+  category: military
+  region: new-hope
+  town: "Titusville, NJ"
+  address: "355 Washington Crossing-Pennington Road, Titusville, NJ 08560"
+  lat: 40.309357
+  lng: -74.848336
+  website: "https://dep.nj.gov/parksandforests/state-park/washington-crossing-state-park/"
+  phone: "609-737-0623"
+  admission: "Free"
+  hours: "Park daily 8am–8pm; office Mon–Fri 9am–4pm. MUSEUM BUILDING CLOSED for a $23.8M reconstruction, targeted to reopen in 2026 (no confirmed date) — call before visiting."
+  drive_min: 15
+  seasonal: false
+  appointment_only: false
+  source: "https://dep.nj.gov/parksandforests/state-park/washington-crossing-state-park/"
+  blurb: "NJ-side state park marking Washington's Christmas-night 1776 crossing, directly across the river from New Hope. Its Visitor Center Museum (when open) houses the Swan Historical Foundation's 500+ Revolutionary War artifacts and the 'Ten Crucial Days' exhibit. Grounds are open, but the museum building is mid-reconstruction — confirm reopening before planning around it."
+
+- id: johnson-ferry-house
+  name: "Johnson Ferry House"
+  category: house-museum
+  region: new-hope
+  town: "Titusville, NJ"
+  address: "355 Washington Crossing-Pennington Road, Titusville, NJ 08560"
+  lat: 40.2996
+  lng: -74.868
+  website: "https://www.wcpa-nj.com/johnson"
+  phone: "609-737-2515"
+  admission: "UNKNOWN — confirm"
+  hours: "Thu–Sat 11am–12pm & 1–4pm (seasonal; sources vary — confirm current hours)."
+  drive_min: 20
+  seasonal: true
+  appointment_only: false
+  source: "https://www.wcpa-nj.com/johnson"
+  blurb: "An early-1700s gambrel-roofed farmhouse and tavern in Washington Crossing State Park (NJ), built by ferry operator Garret Johnson and likely used by Washington's officers the night of the 1776 crossing. Period-furnished rooms, an 18th-century kitchen garden, and weekend living-history demonstrations — a distinct stop from the park's Visitor Center Museum."
+
+- id: howell-living-history-farm
+  name: "Howell Living History Farm"
+  category: living-history
+  region: new-hope
+  town: "Titusville, NJ"
+  address: "70 Woodens Lane, Hopewell Township, NJ 08530"
+  lat: 40.3406
+  lng: -74.9023
+  website: "https://www.howellfarm.org/"
+  phone: "609-737-3299"
+  admission: "Free (fee for fall corn maze)"
+  hours: "Tue–Sat 10am–4pm; closed Sun, Mon & county holidays. Activities vary by day/season; confirm winter (Jan–Apr) schedule."
+  drive_min: 15
+  seasonal: true
+  appointment_only: false
+  source: "https://www.howellfarm.org/visit"
+  blurb: "A working farm museum run by the Mercer County Park Commission recreating rural NJ farm life circa 1890–1910, with draft horses, heritage-breed animals, and costumed interpreters. Walk-in self-guided visiting is standard; seasonal programs like Corn Harvest and Christmas on the Farm add weekend hours."
+
+# ============================================================
+# LAMBERTVILLE, STOCKTON & HUNTERDON (NJ)
+# ============================================================
+- id: marshall-house-lambertville
+  name: "James Wilson Marshall House"
+  category: house-museum
+  region: lambertville
+  town: "Lambertville, NJ"
+  address: "60 Bridge Street, Lambertville, NJ 08530"
+  lat: 40.366111
+  lng: -74.944194
+  website: "https://lambertvillehistoricalsociety.org/james-wilson-marshall-house"
+  phone: "609-397-0770"
+  admission: "Free"
+  hours: "Weekends 1–4pm, late Apr (Shad Fest) through the last weekend in October; by appointment off-season."
+  drive_min: 5
+  seasonal: true
+  appointment_only: false
+  source: "https://lambertvillehistoricalsociety.org/james-wilson-marshall-house"
+  blurb: "An 1816 Federal brick home, boyhood home of James Wilson Marshall, whose 1848 gold discovery in California sparked the Gold Rush. Now HQ of the Lambertville Historical Society with period rooms and local-history exhibits, a few minutes from New Hope over the river bridge. Also the start point for the Society's guided walking tours."
+
+- id: holcombe-jimison-farmstead
+  name: "Holcombe-Jimison Farmstead Museum"
+  category: living-history
+  region: lambertville
+  town: "Lambertville, NJ"
+  address: "1605 Daniel Bray Highway (Rt. 29), Lambertville, NJ 08530"
+  lat: 40.379876
+  lng: -74.949875
+  website: "https://sites.google.com/view/holcombe-jimison-org/home"
+  phone: "609-397-2752"
+  admission: "Donation suggested"
+  hours: "Sundays 1–4pm, May–Oct; Wednesdays 9am–12pm year-round. Event days vary — confirm off-season."
+  drive_min: 8
+  seasonal: true
+  appointment_only: false
+  source: "https://visitnj.org/nj-historic-sites-memorials/holcombe-jimison-farmstead-museum"
+  blurb: "A restored 18th–20th century farmstead and bank barn along Route 29 just north of Lambertville. Exhibits cover regional agricultural heritage — farm tools, husbandry, domestic work — with seasonal events like an antique tractor/car show and craft festival."
+
+- id: prallsville-mills
+  name: "Prallsville Mills"
+  category: history
+  region: lambertville
+  town: "Stockton, NJ"
+  address: "33 Risler Street, Stockton, NJ 08559"
+  lat: 40.4087
+  lng: -74.9841
+  website: "https://www.prallsvillemills.org"
+  phone: "609-397-3586"
+  admission: "Free"
+  hours: "Grounds open daily dawn–dusk (self-guided); historic mill buildings/gallery open only during scheduled events, exhibits, rentals, or by appointment."
+  drive_min: 8
+  seasonal: false
+  appointment_only: false
+  source: "https://www.prallsvillemills.org"
+  blurb: "A 10-building, 10-acre historic mill complex on the Delaware (D&R Canal State Park land) run by the Delaware River Mill Society, including an 1877 grist mill, 1790 linseed oil mill, and 1850 sawmill. Walk the grounds and see exteriors any time; check the events calendar to get inside a building."
+
+- id: doric-house
+  name: "Doric House (Hunterdon County Historical Society)"
+  category: house-museum
+  region: lambertville
+  town: "Flemington, NJ"
+  address: "114 Main Street, Flemington, NJ 08822"
+  lat: 40.5094274
+  lng: -74.8586913
+  website: "https://hunterdonhistory.org/facilities/doric-house/"
+  phone: "908-782-1091"
+  admission: "Donation — confirm"
+  hours: "Museum tours by appointment only; research library Tue & Thu 12–4pm by appointment. Call ahead."
+  drive_min: 20
+  seasonal: true
+  appointment_only: true
+  source: "https://hunterdonhistory.org/facilities/doric-house/"
+  blurb: "An 1845 Greek Revival house built by carpenter Mahlon Fisher, now HQ of the Hunterdon County Historical Society, furnished with period antiques and adjoined by the Society's research library. Access is limited — plan ahead and confirm current tour availability."
+
+- id: hunterdon-art-museum
+  name: "Hunterdon Art Museum"
+  category: art
+  region: lambertville
+  town: "Clinton, NJ"
+  address: "7 Lower Center Street, Clinton, NJ 08809"
+  lat: 40.6367122
+  lng: -74.9119875
+  website: "https://www.hunterdonartmuseum.org/"
+  phone: "908-735-8415"
+  admission: "$7 adults / $5 seniors, military & students / free under 12 & members"
+  hours: "Wed–Sun 11am–5pm (closed Mon & Tue)"
+  drive_min: 35
+  seasonal: false
+  appointment_only: false
+  source: "https://www.hunterdonartmuseum.org/visit/"
+  blurb: "A contemporary art museum in a curved 19th-century stone grist mill on the South Branch of the Raritan, on the National Register. Rotating exhibitions of contemporary art, craft, and design plus a sculpture garden — worth it for the building as much as the art. On the farther edge of the radius."
+
+- id: red-mill-museum-village
+  name: "Red Mill Museum Village"
+  category: living-history
+  region: lambertville
+  town: "Clinton, NJ"
+  address: "56 Main St, Clinton, NJ 08809"
+  lat: 40.6361703
+  lng: -74.9127536
+  website: "https://theredmill.org/"
+  phone: "908-735-4101"
+  admission: "$12 adults / $10 seniors & children 6–12 / free members, veterans, under 6"
+  hours: "Wed–Fri 10am–4pm, Sat–Sun 11am–5pm; outbuilding access weather-dependent. Possible winter reduction — confirm."
+  drive_min: 35
+  seasonal: true
+  appointment_only: false
+  source: "https://theredmill.org/visit"
+  blurb: "An iconic red 19th-century grist/woolen mill on the South Branch Raritan, now a village of about a dozen historic structures (general store, one-room schoolhouse, log cabin). One of NJ's most-photographed landmarks, a short walk from the Hunterdon Art Museum. On the farther edge of the radius."
+
+- id: black-river-western-railroad-museum
+  name: "Black River & Western Railroad Museum"
+  category: specialty
+  region: lambertville
+  town: "Ringoes, NJ"
+  address: "101 John Ringo Road, Ringoes, NJ 08551"
+  lat: 40.4356
+  lng: -74.8714
+  website: "https://www.blackriverrailroad.com/"
+  phone: "908-782-6622"
+  admission: "UNKNOWN — confirm"
+  hours: "UNKNOWN — confirm; museum car accessible when the heritage railroad operates (seasonal, mainly weekends) — call ahead."
+  drive_min: 32
+  seasonal: true
+  appointment_only: false
+  source: "https://www.blackriverrailroad.com/about/"
+  blurb: "A small railroad museum in a vintage Central Railroad of NJ baggage car (#420) parked beside the Ringoes station of the Black River & Western heritage line. Displays and an operating model railroad cover the volunteer-run line and Hunterdon County rail history — a natural add-on for anyone riding the excursion train."
+
+# ============================================================
+# DOYLESTOWN & CENTRAL BUCKS (PA)
+# ============================================================
+- id: mercer-museum
+  name: "Mercer Museum"
+  category: history
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "84 South Pine Street, Doylestown, PA 18901"
+  lat: 40.3079016
+  lng: -75.1273184
+  website: "https://www.mercermuseum.org/"
+  phone: "215-345-0210"
+  admission: "$20 adults / $17 seniors / $15 students / $10 youth 6–17 / free under 5 & members"
+  hours: "Tue–Sun 10am–5pm (timed entry); closed Mon, Thanksgiving, Christmas, New Year's Day."
+  drive_min: 21
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://www.mercermuseum.org/visit/mercer-museum/plan-visit/"
+  blurb: "A six-story reinforced-concrete castle built 1913–1916 by archaeologist and collector Henry Chapman Mercer to house 40,000+ pre-industrial American tools and trade objects, with a whaleboat, stagecoach, and Conestoga wagon hung in the central atrium. A Smithsonian affiliate run by the Bucks County Historical Society."
+
+- id: fonthill-castle
+  name: "Fonthill Castle"
+  category: house-museum
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "525 East Court Street, Doylestown, PA 18901"
+  lat: 40.3211307
+  lng: -75.1229558
+  website: "https://www.mercermuseum.org/visit/fonthill-castle/"
+  phone: "215-348-9461"
+  admission: "$20 adults (separate ticket from the Mercer Museum; guided tour)"
+  hours: "Tue–Sun 10am–5pm, last tour ~4pm; closed Mon. Guided 60-min tours; reservations recommended."
+  drive_min: 19
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://www.mercermuseum.org/visit/fonthill-castle/plan-visit/"
+  blurb: "The eclectic 44-room hand-poured concrete home Henry Chapman Mercer built for himself (1908–1912), with his decorative tiles and prints embedded directly into the walls, ceilings, and floors, plus 6,000+ books in built-in cases. Operated by the Bucks County Historical Society, a short walk from the Mercer Museum along the 'Mercer Mile.'"
+
+- id: moravian-pottery-tile-works
+  name: "Moravian Pottery & Tile Works"
+  category: living-history
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "130 East Swamp Road, Doylestown, PA 18901"
+  lat: 40.3232948
+  lng: -75.1232267
+  website: "https://www.thetileworks.org/"
+  phone: "215-239-9797"
+  admission: "$17 adults; child/senior tiers — confirm"
+  hours: "Tue–Sun 10am–5pm, closed Mon; self-guided tours every ~half hour. Advance booking recommended, walk-ins welcome."
+  drive_min: 19
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://www.thetileworks.org/"
+  blurb: "A working history museum built 1911–1912 by Henry Chapman Mercer to produce his handcrafted Arts & Crafts mosaic tiles, still made on-site by hand using Mercer's original methods. Owned by Bucks County government and operated by the nonprofit TileWorks of Bucks County — the third stop on the 'Mercer Mile.'"
+
+- id: michener-art-museum
+  name: "James A. Michener Art Museum"
+  category: art
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "138 South Pine Street, Doylestown, PA 18901"
+  lat: 40.3085531
+  lng: -75.1260510
+  website: "https://michenerartmuseum.org/"
+  phone: "215-340-9800"
+  admission: "$15 adults / $13 seniors / $8 college / $5 youth 6–18 / free under 5 & active military"
+  hours: "Wed–Sat 10am–5pm, Sun 12–5pm; closed Mon–Tue. Free the 2nd Sunday monthly."
+  drive_min: 21
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://michenerartmuseum.org/visit/plan-your-visit/"
+  blurb: "Named for Doylestown-born author James A. Michener and housed in the former Bucks County Prison, the museum showcases Pennsylvania Impressionist and American art with a strong Bucks County focus, alongside changing contemporary exhibitions."
+
+- id: bucks-county-civil-war-museum
+  name: "Bucks County Civil War Library & Museum"
+  category: military
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "32 North Broad Street, Doylestown, PA 18901"
+  lat: 40.3128173
+  lng: -75.1302954
+  website: "https://www.civilwarmuseumdoylestown.org"
+  phone: "215-348-4870"
+  admission: "Free"
+  hours: "Saturdays only, 10:30am–2:00pm; closed Sun–Fri."
+  drive_min: 20
+  seasonal: false
+  appointment_only: false
+  source: "https://www.civilwarmuseumdoylestown.org/overview"
+  blurb: "A small volunteer-run museum and research library in the historic Hall House, focused on Bucks County's Civil War soldiers, with a reading room of books, periodicals, maps, and rare first editions."
+
+- id: vampa-museum
+  name: "VAMPA: Vampire & Paranormal Museum"
+  category: specialty
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "3686 US-202 (North Easton Rd), Doylestown, PA 18902"
+  lat: 40.3344
+  lng: -75.1260
+  website: "https://www.vampamuseum.com/"
+  phone: "215-345-4253"
+  admission: "$20 adults (18+); $8 youth 6–17; free under 6"
+  hours: "Thu–Sun 10am–5pm (adjoining antiques barn Tue–Sun 10am–5pm)"
+  drive_min: 20
+  seasonal: false
+  appointment_only: false
+  source: "https://www.vampamuseum.com/museum"
+  blurb: "Self-described 'largest vampire and paranormal museum in the world,' on a former dairy farm on Route 202 north of Doylestown alongside a large antiques barn. Collection spans 1700s vampire-hunting kits, exorcism artifacts, Ouija boards, and Dracula-film memorabilia."
+
+- id: hammerstein-museum-highland-farm
+  name: "Oscar Hammerstein Museum (Highland Farm)"
+  category: house-museum
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "70 East Road, Doylestown, PA 18901"
+  lat: 40.3105
+  lng: -75.1123
+  website: "https://www.hammersteinmuseum.org/"
+  phone: "215-346-7320"
+  admission: "$15 (public tour ticket)"
+  hours: "Seasonal, advance-ticket public tours only; tours canceled if no tickets sold by the night before. Private/group by appointment."
+  drive_min: 18
+  seasonal: true
+  appointment_only: true
+  source: "https://www.hammersteinmuseum.org/tourinfo"
+  blurb: "Oscar Hammerstein II's Bucks County farm (1940–1960), where he wrote lyrics for Oklahoma!, South Pacific, and more. A nonprofit is restoring the property; 45-minute guided tours cover his legacy, but access is limited to scheduled, pre-ticketed dates."
+
+- id: pearl-s-buck-house
+  name: "Pearl S. Buck House (Green Hills Farm)"
+  category: house-museum
+  region: doylestown
+  town: "Perkasie, PA"
+  address: "520 Dublin Road, Perkasie, PA 18944"
+  lat: 40.3585
+  lng: -75.2200
+  website: "https://pearlsbuck.org/"
+  phone: "215-249-0100"
+  admission: "$15 adults / $12 seniors / $7 students / members free"
+  hours: "Seasonal, Mar–Dec (closed Jan–Feb). Tours Tue–Sat 11am/1pm/2pm, Sun 1pm/2pm; closed Mon & major holidays."
+  drive_min: 30
+  seasonal: true
+  appointment_only: false
+  featured: true
+  source: "https://pearlsbuck.org/visit-the-pearl-s-buck-house/plan-your-visit/"
+  blurb: "National Historic Landmark and 68-acre estate of Nobel and Pulitzer Prize-winning author Pearl S. Buck. The c.1825 stone farmhouse retains her original furnishings, including the typewriter on which she wrote The Good Earth, plus gardens and an arboretum."
+
+- id: doylestown-historical-society
+  name: "Doylestown Historical Society Museum"
+  category: history
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "56 South Main Street, Doylestown, PA 18901"
+  lat: 40.3087771
+  lng: -75.1300187
+  website: "https://doylestownhistorical.org/"
+  phone: "215-345-9430"
+  admission: "UNKNOWN — confirm"
+  hours: "Wed–Sat 10am–3pm, or by appointment."
+  drive_min: 20
+  seasonal: false
+  appointment_only: false
+  source: "https://doylestownhistorical.org/about-us/"
+  blurb: "Housed in the 1820 Magill School House on Main Street, the society preserves Doylestown's history through permanent and changing exhibits, a speaker series, video histories, and walking tours."
+
+- id: moland-house
+  name: "Moland House (Washington's Headquarters)"
+  category: living-history
+  region: doylestown
+  town: "Hartsville, PA"
+  address: "1641 Old York Road, Hartsville, PA 18974"
+  lat: 40.2361181
+  lng: -75.0928283
+  website: "https://moland.org/"
+  phone: "215-918-1754"
+  admission: "$7 adults, $15 families; under 6 & members free"
+  hours: "Guided tours 1–4pm; 2nd Sunday Nov–Mar, 2nd & 4th Sundays Apr–Oct (living-history demos); groups by appointment."
+  drive_min: 23
+  seasonal: true
+  appointment_only: false
+  source: "https://moland.org/directions-and-hours/"
+  blurb: "General Washington's headquarters Aug 10–23, 1777 while 11,000 Continental troops encamped here en route to Brandywine. Run by the Warwick Township Historical Society with guided tours plus open-hearth cooking, blacksmithing, and woodworking demonstrations."
+
+- id: craven-hall
+  name: "Craven Hall & John Fitch Steamboat Museum"
+  category: house-museum
+  region: doylestown
+  town: "Warminster, PA"
+  address: "599 Newtown Road, Warminster, PA 18974"
+  lat: 40.1916360
+  lng: -75.0735480
+  website: "https://craven-hall.org/"
+  phone: "215-675-4698"
+  admission: "UNKNOWN — confirm"
+  hours: "2nd Sunday of every month, 12–3pm, and by appointment."
+  drive_min: 29
+  seasonal: false
+  appointment_only: false
+  source: "https://craven-hall.org/"
+  blurb: "A Federal/Greek Revival house built in stages 1790–1845 (National Register), run by the Craven Hall Historical Society. The site also holds the John Fitch Steamboat Museum in an adjacent 1920s carriage house, honoring the inventor of the first commercial steamboat."
+
+- id: byers-choice
+  name: "Byers' Choice Visitor Center & Christmas Museum"
+  category: specialty
+  region: doylestown
+  town: "Chalfont, PA"
+  address: "4355 County Line Road, Chalfont, PA 18914"
+  lat: 40.2707324
+  lng: -75.2367509
+  website: "https://byerschoice.com/pages/visitor-center"
+  phone: "215-822-7707"
+  admission: "Free"
+  hours: "Tue–Sat 10am–5pm; closed Sun–Mon; closed Feb–Mar for cleaning."
+  drive_min: 33
+  seasonal: true
+  appointment_only: false
+  source: "https://byerschoice.com/pages/visitor-center"
+  blurb: "Home of Byers' Choice Carolers, with a free visitor center and Christmas Museum spanning 200+ years of holiday traditions, formal gardens, a short film, and a gallery overlooking the production floor where artisans handcraft the Carolers (artisan viewing best Fri–Sun)."
+
+- id: national-shrine-czestochowa
+  name: "National Shrine of Our Lady of Częstochowa"
+  category: specialty
+  region: doylestown
+  town: "Doylestown, PA"
+  address: "654 Ferry Road, Doylestown, PA 18901"
+  lat: 40.3192101
+  lng: -75.1795757
+  website: "https://czestochowa.us/visit-us/"
+  phone: "215-345-0600"
+  admission: "Free"
+  hours: "Grounds/church generally Mon–Sat 8am–4:30pm; Religious Article Center Tue–Fri 8am–2:30pm, Sat 9–1, Sun 11–2."
+  drive_min: 28
+  seasonal: false
+  appointment_only: false
+  source: "https://czestochowa.us/visit-us/"
+  blurb: "A major Polish-American Catholic pilgrimage site on Beacon Hill (the highest point in Bucks County), run by the Pauline Fathers; the main shrine was dedicated in 1966. Visitor-facing components include a museum exhibition, outdoor Stations of the Cross, a Polish-American cemetery, gift shop, and Polish deli. Primarily a religious shrine rather than a conventional museum."
+
+- id: quakertown-historical-society
+  name: "Quakertown Historical Society"
+  category: history
+  region: doylestown
+  town: "Quakertown, PA"
+  address: "26 North Main Street, Quakertown, PA 18951"
+  lat: 40.4435838
+  lng: -75.3529653
+  website: "https://www.quakertownhistoricalsociety.org/"
+  phone: "267-227-3864"
+  admission: "Free"
+  hours: "Visitor Center Museum Mon–Fri 9am–2pm; Burgess-Foulke House (1812) & Liberty Hall (1772) tours by appointment."
+  drive_min: 45
+  seasonal: false
+  appointment_only: false
+  source: "https://www.quakertownhistoricalsociety.org/"
+  blurb: "A weekday visitor-center museum plus two historic buildings toured by appointment: the 1812 four-story Burgess-Foulke House and 1772 Liberty Hall, where the Liberty Bell rested Sept 23, 1777 en route to Allentown. At the very edge of the 45-minute radius."
+
+- id: sellersville-museum
+  name: "Sellersville Museum"
+  category: history
+  region: doylestown
+  town: "Sellersville, PA"
+  address: "120 East Church Street, Sellersville, PA 18960"
+  lat: 40.3619649
+  lng: -75.3102732
+  website: "https://www.sellersvillemuseum.org/"
+  phone: "215-257-5253"
+  admission: "Free"
+  hours: "2nd full weekend of every month, Sat & Sun 12–4pm."
+  drive_min: 43
+  seasonal: false
+  appointment_only: false
+  source: "https://www.sellersvillemuseum.org/"
+  blurb: "Set in an old schoolhouse and home to the Sellersville Historical Society, displaying memorabilia of the community. Open the second full weekend of each month, free. Borderline for the 45-minute radius."
+
+- id: perkasie-historical-society-museum
+  name: "Perkasie Historical Society Museum"
+  category: history
+  region: doylestown
+  town: "Perkasie, PA"
+  address: "513 West Walnut Street, Perkasie, PA 18944"
+  lat: 40.3723630
+  lng: -75.2969630
+  website: "https://www.perkasiehistory.org/"
+  phone: "UNKNOWN — confirm"
+  admission: "UNKNOWN — confirm"
+  hours: "By appointment."
+  drive_min: 40
+  seasonal: false
+  appointment_only: true
+  source: "https://www.perkasiehistory.org/perkasiehistoricalsocietymuseum.html"
+  blurb: "Founded in 1954 and headquartered in the former 1912 Lehigh Valley Transit trolley station; also cares for the South Perkasie Covered Bridge and the Perkasie Carousel. Open by appointment. Borderline for the 45-minute radius."
+
+# ============================================================
+# NEWTOWN & LOWER BUCKS (PA)
+# ============================================================
+- id: newtown-historic-half-moon-inn
+  name: "Half-Moon Inn (Newtown Historic Association)"
+  category: house-museum
+  region: lower-bucks
+  town: "Newtown, PA"
+  address: "105 Court Street, Newtown, PA 18940"
+  lat: 40.2276
+  lng: -74.9362
+  website: "https://newtownhistoric.org/"
+  phone: "215-968-4004"
+  admission: "Free"
+  hours: "Sundays 1:00–4:00pm, closed major holidays; separate Callahan Research Center has weekday/by-appointment hours."
+  drive_min: 21
+  seasonal: false
+  appointment_only: false
+  source: "https://newtownhistoric.org/visit/half-moon-inn/"
+  blurb: "Built in 1733 as a tavern, this National Register building is the headquarters and house museum of the Newtown Historic Association, with restored period rooms including a tavern room and an Edward Hicks Room."
+
+- id: african-american-museum-bucks-county
+  name: "African American Museum of Bucks County"
+  category: history
+  region: lower-bucks
+  town: "Langhorne, PA"
+  address: "867 Langhorne-Newtown Road, Langhorne, PA 19047"
+  lat: 40.1920
+  lng: -74.9276
+  website: "https://www.aamuseumbucks.org/"
+  phone: "215-752-1909"
+  admission: "$12 adults / $10 senior & military / $7 student 6–18 / free members & under 5"
+  hours: "Wed–Thu 1:30–4pm; Fri–Sat 10am–4pm; closed Sun–Tue."
+  drive_min: 24
+  seasonal: false
+  appointment_only: false
+  source: "https://www.aamuseumbucks.org/"
+  blurb: "A museum in a c.1716 farmhouse on Core Creek whose permanent home opened Juneteenth 2026. Seven rooms and four exhibit niches trace African American history in Bucks County — slavery, abolition, and notable local Black residents. Very new; verify hours as it matures."
+
+- id: lra-auto-museum
+  name: "LRA Auto Museum"
+  category: specialty
+  region: lower-bucks
+  town: "Bristol, PA"
+  address: "3114 Veterans Highway, Bristol, PA 19007"
+  lat: 40.1237372
+  lng: -74.8815529
+  website: "https://www.lraautomuseumandsales.com/"
+  phone: "215-781-3790"
+  admission: "Free"
+  hours: "UNKNOWN — confirm (secondary sources conflict on weekday/Saturday hours; call ahead)."
+  drive_min: 34
+  seasonal: false
+  appointment_only: false
+  source: "https://www.lraautomuseumandsales.com/"
+  blurb: "A free-admission classic and muscle-car showroom-museum attached to a working used-car dealership (opened 2010), displaying rare Corvettes, Camaros, Mustangs, and hot rods. Functionally a dealership with a museum-style display rather than a standalone nonprofit museum."
+
+- id: pennsbury-manor
+  name: "Pennsbury Manor"
+  category: living-history
+  region: lower-bucks
+  town: "Morrisville, PA"
+  address: "400 Pennsbury Memorial Road, Morrisville, PA 19067"
+  lat: 40.1328397
+  lng: -74.7682435
+  website: "https://www.pennsburymanor.org/"
+  phone: "215-946-0400"
+  admission: "$9 adults (12–64) / $7 seniors / $5 youth 3–11 / $3 grounds-only / under 3 free"
+  hours: "Wed–Sat 10am–5pm, Sun 12–5pm (guided tours); Tue grounds-only; closed Mon; reduced/closed in winter (Jan–Feb)."
+  drive_min: 45
+  seasonal: true
+  appointment_only: false
+  source: "https://www.pennsburymanor.org/plan-your-visit/hours-admission-faq/"
+  blurb: "A PHMC state historic site — a reconstruction of William Penn's 17th-century Delaware River country estate, with a Georgian manor house, working farm, and costumed interpreters demonstrating colonial daily life. At the outer edge of the 45-minute radius."
+
+- id: grundy-museum
+  name: "Margaret R. Grundy Memorial Museum"
+  category: house-museum
+  region: lower-bucks
+  town: "Bristol, PA"
+  address: "610 Radcliffe Street, Bristol, PA 19007"
+  lat: 40.0974595
+  lng: -74.8507550
+  website: "https://grundymuseum.org/"
+  phone: "215-788-9432"
+  admission: "Free"
+  hours: "Guided tours (registration required) Tue–Fri 1:30pm & 3pm, Sat 11am/1:30pm/3pm; seasonal schedule — confirm open months."
+  drive_min: 40
+  seasonal: true
+  appointment_only: true
+  source: "https://grundymuseum.org/visit/hours-admission/"
+  blurb: "Bristol Borough's historic house museum — an 1880s Queen Anne riverfront mansion built by industrialist William H. Grundy, preserved with original family furnishings and Delaware River views. Part of the Grundy Foundation/Library complex."
+
+- id: historic-fallsington
+  name: "Historic Fallsington"
+  category: living-history
+  region: lower-bucks
+  town: "Fallsington, PA"
+  address: "4 Yardley Avenue, Fallsington, PA 19054"
+  lat: 40.1861336
+  lng: -74.8185148
+  website: "https://www.historicfallsington.org/"
+  phone: "215-295-6567"
+  admission: "$7 adults / $6 seniors / $3 children / under 6 & members free"
+  hours: "Visitor Center (May–Oct) Mon–Fri 10am–3pm, Sat 11am–2pm; guided tours Thu–Sat in set blocks; groups of 5+ by advance arrangement."
+  drive_min: 28
+  seasonal: true
+  appointment_only: false
+  source: "https://www.historicfallsington.org/tours"
+  blurb: "A preserved colonial-era village run by Historic Fallsington, Inc., with several historic house museums and a visitor center around the old Quaker meetinghouse. Guided walking tours interpret 300 years of Bucks County village life."
+
+- id: summerseat
+  name: "Summerseat"
+  category: house-museum
+  region: lower-bucks
+  town: "Morrisville, PA"
+  address: "Hillcrest & Legion Avenues, Morrisville, PA 19067"
+  lat: 40.208083
+  lng: -74.779583
+  website: "https://historicsummerseat.com/"
+  phone: "215-295-2194"
+  admission: "$7 per person; children under 12 free"
+  hours: "Tours the first Saturday of each month, 10am–1pm; groups by appointment."
+  drive_min: 28
+  seasonal: false
+  appointment_only: false
+  source: "https://historicsummerseat.com/"
+  blurb: "A c.1765 mansion that served as Washington's headquarters Dec 8–14, 1776, and the only house known to have been owned by two signers of the Declaration of Independence (George Clymer and Robert Morris). A National Historic Landmark house museum run by the Historic Morrisville Society."
+
+- id: historic-langhorne-association
+  name: "Historic Langhorne Association Museum & Library"
+  category: history
+  region: lower-bucks
+  town: "Langhorne, PA"
+  address: "160 West Maple Avenue, Langhorne, PA 19047"
+  lat: 40.1757487
+  lng: -74.9221650
+  website: "https://historiclanghorne.org/"
+  phone: "215-757-1888"
+  admission: "Free"
+  hours: "Wed 10am–12pm & 7pm–9pm, Sat 10am–12pm, and by appointment."
+  drive_min: 28
+  seasonal: false
+  appointment_only: false
+  source: "https://historiclanghorne.org/"
+  blurb: "Founded in 1965 and housed in an 1888 former library building, the association runs a small museum of local artifacts, a research library, and archives, open free on Wednesday and Saturday mornings plus Wednesday evenings."
+
+- id: yardley-historical-association
+  name: "Yardley Historical Association (The Old Library)"
+  category: history
+  region: lower-bucks
+  town: "Yardley, PA"
+  address: "46 West Afton Avenue, Yardley, PA 19067"
+  lat: 40.2423509
+  lng: -74.8410603
+  website: "https://yardleyhistory.org/"
+  phone: "215-208-1154"
+  admission: "UNKNOWN — confirm (typically free/donation)"
+  hours: "2nd and 4th Wednesdays of each month, or by appointment."
+  drive_min: 22
+  seasonal: false
+  appointment_only: false
+  source: "https://yardleyhistory.org/contact/"
+  blurb: "The Yardley Historical Association's headquarters and small local-history museum in the Old Library beside Lake Afton, holding maps, photographs, newspapers, deeds, and ephemera of the Yardley area."
+
+- id: andalusia-historic-house-gardens
+  name: "Andalusia Historic House, Gardens & Arboretum"
+  category: house-museum
+  region: lower-bucks
+  town: "Bensalem, PA"
+  address: "1237 State Road, Bensalem, PA 19020"
+  lat: 40.0619923
+  lng: -74.9582326
+  website: "https://andalusiapa.org/"
+  phone: "UNKNOWN — confirm"
+  admission: "Gardens $15 adults (members & children 12 & under free); historic house tour additional $15"
+  hours: "2026 season (through ~Nov 13): Mon, Tue, Fri 10am–3pm plus select Saturdays; house by guided tour."
+  drive_min: 38
+  seasonal: true
+  appointment_only: false
+  source: "https://andalusiapa.org/visit/"
+  blurb: "The Greek Revival Biddle family estate on the Delaware River — a National Historic Landmark house museum amid 50 acres of formal gardens, woodlands, and an arboretum. Grounds are self-guided; the house is toured with a guide during the April–November season."
+
+- id: bolton-mansion
+  name: "Historic Bolton Mansion"
+  category: house-museum
+  region: lower-bucks
+  town: "Levittown, PA"
+  address: "85 Holly Drive, Levittown, PA 19055"
+  lat: 40.1605609
+  lng: -74.8406367
+  website: "https://boltonmansion.org/"
+  phone: "215-943-6883"
+  admission: "UNKNOWN — confirm"
+  hours: "By appointment only (guided tours ~45–90 min); occasional public open houses and events."
+  drive_min: 30
+  seasonal: false
+  appointment_only: true
+  source: "https://boltonmansion.org/tours/"
+  blurb: "Also known as the Phineas Pemberton House, a group of connected structures built 1687–1790 — among the earliest architecture in Bucks County — that later served as the Levitt & Sons headquarters during the building of Levittown. The Friends of Bolton Mansion give first-floor tours by appointment plus periodic open houses."
+
+# ============================================================
+# PRINCETON, TRENTON & HOPEWELL (NJ)
+# ============================================================
+- id: morven-museum-garden
+  name: "Morven Museum & Garden"
+  category: house-museum
+  region: princeton
+  town: "Princeton, NJ"
+  address: "55 Stockton Street, Princeton, NJ 08540"
+  lat: 40.3478
+  lng: -74.6669
+  website: "https://www.morven.org/"
+  phone: "609-924-8144"
+  admission: "$15 adults / $12 seniors / $10 students & youth 7–18 / free under 6; gardens free"
+  hours: "Wed–Sun 10am–4pm; garden dawn–dusk daily. Closed major holidays."
+  drive_min: 33
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://www.morven.org/visit"
+  blurb: "The former home of NJ's only signer of the Declaration of Independence, later the governor's residence; now a decorative-arts museum with rotating exhibitions and a landscaped garden in downtown Princeton."
+
+- id: princeton-university-art-museum
+  name: "Princeton University Art Museum"
+  category: art
+  region: princeton
+  town: "Princeton, NJ"
+  address: "Elm Drive, Princeton University, Princeton, NJ 08544"
+  lat: 40.3477
+  lng: -74.6588
+  website: "https://artmuseum.princeton.edu/"
+  phone: "609-258-3788"
+  admission: "Free"
+  hours: "Mon–Wed 10am–5pm; Thu–Fri 10am–8pm; Sat 10am–5pm; Sun 12–5pm. Closed major holidays."
+  drive_min: 33
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://artmuseum.princeton.edu/visit"
+  blurb: "Reopened Oct 31, 2025 in a wholly new David Adjaye-designed building after a multi-year closure — free admission to an encyclopedic collection spanning ancient to contemporary art. (Many older listings still say 'closed for construction' — it is now open.)"
+
+- id: art-bainbridge
+  name: "Art@Bainbridge"
+  category: art
+  region: princeton
+  town: "Princeton, NJ"
+  address: "158 Nassau Street, Princeton, NJ 08542"
+  lat: 40.3504
+  lng: -74.6574
+  website: "https://artmuseum.princeton.edu/visit/artbainbridge"
+  phone: "609-258-3788"
+  admission: "Free"
+  hours: "Fri–Sat 11am–5pm; Sun 12–5pm (cross-check against the main museum's hours before visiting)."
+  drive_min: 33
+  seasonal: false
+  appointment_only: false
+  source: "https://artmuseum.princeton.edu/visit/artbainbridge"
+  blurb: "A small satellite gallery of the Princeton University Art Museum in the restored 1766 colonial-era Bainbridge House on Nassau Street; it continues hosting exhibitions even after the main museum reopened."
+
+- id: nj-state-museum
+  name: "New Jersey State Museum"
+  category: history
+  region: princeton
+  town: "Trenton, NJ"
+  address: "205 West State Street, Trenton, NJ 08608"
+  lat: 40.2211
+  lng: -74.7731
+  website: "https://www.nj.gov/state/museum/"
+  phone: "609-292-6464"
+  admission: "Free"
+  hours: "Tue–Sun 9am–4:45pm (galleries close 4:30pm); closed Mondays & state holidays. Planetarium shows daily."
+  drive_min: 30
+  seasonal: false
+  appointment_only: false
+  source: "https://www.nj.gov/state/museum/visit-hours-admission.shtml"
+  blurb: "New Jersey's general state museum — fine art, cultural history, archaeology, and natural-history/dinosaur galleries plus a planetarium, free to visit, near the State House complex."
+
+- id: old-barracks-museum
+  name: "Old Barracks Museum"
+  category: living-history
+  region: princeton
+  town: "Trenton, NJ"
+  address: "101 Barrack Street, Trenton, NJ 08608"
+  lat: 40.2199
+  lng: -74.7687
+  website: "https://barracks.org/"
+  phone: "609-396-1776"
+  admission: "$15 adults / $12 students & seniors / free active military & children under 5"
+  hours: "REOPENING STATUS — CONFIRM. Regular hours when open: Wed–Sat 10am–5pm. Reopened after restoration per July 2026 news, but the site's own page recently still read 'closed for renovations' — call ahead."
+  drive_min: 30
+  seasonal: false
+  appointment_only: false
+  source: "https://barracks.org/hours-admissions-etc/"
+  blurb: "The only surviving French & Indian War-era barracks in the original 13 colonies; costumed-interpreter tours cover Revolutionary War Trenton. A year-long HVAC/roof restoration reportedly wrapped with a July 2026 reopening — verify current status before visiting."
+
+- id: trent-house-museum
+  name: "1719 William Trent House Museum"
+  category: house-museum
+  region: princeton
+  town: "Trenton, NJ"
+  address: "15 Market Street, Trenton, NJ 08611"
+  lat: 40.2131
+  lng: -74.7658
+  website: "https://www.williamtrenthouse.org/"
+  phone: "609-989-3027"
+  admission: "$5 adults / $4 children & seniors / free for members"
+  hours: "Wed–Sun 1:00pm–4:30pm; closed municipal holidays."
+  drive_min: 32
+  seasonal: false
+  appointment_only: false
+  source: "https://www.williamtrenthouse.org/visit-us.html"
+  blurb: "Trenton's oldest standing building (1719), built by the city's founder William Trent; a National Historic Landmark with period rooms interpreting colonial New Jersey life."
+
+- id: grounds-for-sculpture
+  name: "Grounds For Sculpture"
+  category: art
+  region: princeton
+  town: "Hamilton, NJ"
+  address: "80 Sculptors Way, Hamilton, NJ 08619"
+  lat: 40.2341
+  lng: -74.7213
+  website: "https://www.groundsforsculpture.org/"
+  phone: "609-586-0616"
+  admission: "$25 adults / $18 seniors, military & healthcare / $12 students 6–17 / free 5 & under; $15 evenings"
+  hours: "Mon, Wed, Thu 10am–5pm; Fri–Sun 10am–9pm; closed Tuesdays."
+  drive_min: 35
+  seasonal: false
+  appointment_only: false
+  featured: true
+  source: "https://www.groundsforsculpture.org/visit/hours-admission-directions/"
+  blurb: "A 42-acre sculpture park and arboretum with about 270 outdoor contemporary sculptures plus six indoor galleries — one of the region's most popular art destinations, roughly midway between Philadelphia and New York."
+
+- id: ellarslie-trenton-city-museum
+  name: "Trenton City Museum at Ellarslie Mansion"
+  category: history
+  region: princeton
+  town: "Trenton, NJ"
+  address: "299 Parkside Avenue, Cadwalader Park, Trenton, NJ 08618"
+  lat: 40.2353
+  lng: -74.7882
+  website: "https://www.ellarslie.org/"
+  phone: "609-989-3632"
+  admission: "Free"
+  hours: "Thu–Sat 12–4pm; Sun 1–4pm, plus select additional dates."
+  drive_min: 28
+  seasonal: false
+  appointment_only: false
+  source: "https://www.ellarslie.org/"
+  blurb: "An 1848 John Notman-designed Italianate villa in Trenton's Olmsted-designed Cadwalader Park, now the city's art and history museum and home of the annual juried 'Ellarslie Open' exhibition."
+
+- id: princeton-battlefield-clarke-house
+  name: "Princeton Battlefield / Thomas Clarke House"
+  category: military
+  region: princeton
+  town: "Princeton, NJ"
+  address: "500 Mercer Road, Princeton, NJ 08540"
+  lat: 40.3311
+  lng: -74.6766
+  website: "https://dep.nj.gov/parksandforests/state-park/princeton-battlefield-state-park/"
+  phone: "609-921-0074"
+  admission: "Free"
+  hours: "Park grounds sunrise–sunset daily. Clarke House: Wed–Sat 10am–12pm & 1–4pm; Sun 1–4pm (call ahead)."
+  drive_min: 32
+  seasonal: false
+  appointment_only: false
+  source: "https://dep.nj.gov/parksandforests/state-park/princeton-battlefield-state-park/"
+  blurb: "Site of Washington's January 1777 Battle of Princeton victory; the 1772 Thomas Clarke farmhouse on the battlefield grounds serves as a small museum with period rooms and battle exhibits."
+
+- id: updike-farmstead-hsp
+  name: "Historical Society of Princeton (Updike Farmstead)"
+  category: history
+  region: princeton
+  town: "Princeton, NJ"
+  address: "354 Quaker Road, Princeton, NJ 08540"
+  lat: 40.3246
+  lng: -74.6800
+  website: "https://princetonhistory.org/visit/updike-farmstead/"
+  phone: "609-921-6748"
+  admission: "$4 per person"
+  hours: "Guided-tour access only, select Fridays and Saturdays, advance tickets required (times vary — check the online calendar)."
+  drive_min: 35
+  seasonal: false
+  appointment_only: true
+  source: "https://princetonhistory.org/visit/updike-farmstead/"
+  blurb: "The Historical Society of Princeton's headquarters and collections on a preserved 18th-century farmstead; recently shifted from walk-in open hours to scheduled guided tours only — book ahead."
+
+- id: drumthwacket
+  name: "Drumthwacket (Governor's Mansion)"
+  category: house-museum
+  region: princeton
+  town: "Princeton, NJ"
+  address: "354 Stockton Street, Princeton, NJ 08540"
+  lat: 40.3393
+  lng: -74.6746
+  website: "https://drumthwacket.org/"
+  phone: "973-204-2860"
+  admission: "Free"
+  hours: "TOURS CURRENTLY PAUSED per the official site. When active: select Wednesdays at 1pm (not July/August), advance registration required. Confirm status before planning."
+  drive_min: 33
+  seasonal: true
+  appointment_only: true
+  source: "https://drumthwacket.org/visit/public-tours/"
+  blurb: "The official residence of the Governor of New Jersey, an 1835 Greek Revival mansion normally open for limited guided public tours — but tour registration is presently suspended, so confirm status before including this as a plannable stop."
+
+- id: rockingham-historic-site
+  name: "Rockingham State Historic Site"
+  category: house-museum
+  region: princeton
+  town: "Kingston, NJ"
+  address: "84 Laurel Avenue, Kingston, NJ 08528"
+  lat: 40.3814
+  lng: -74.6164
+  website: "https://www.rockingham.net/"
+  phone: "609-683-7132"
+  admission: "Free (group fees apply)"
+  hours: "Guided tour only. Wed–Sat 10, 11am, 1, 2, 3pm; Sun 1, 2, 3pm. Closed Mon/Tue & state holidays. Book 24+ hrs ahead."
+  drive_min: 38
+  seasonal: false
+  appointment_only: true
+  source: "https://www.rockingham.net/visitor-information"
+  blurb: "George Washington's last Revolutionary War headquarters (1783), where he wrote his farewell address to the army — a rural farmhouse museum near Princeton, entry by pre-booked guided tour only."
+
+- id: hopewell-museum
+  name: "Hopewell Museum"
+  category: history
+  region: princeton
+  town: "Hopewell, NJ"
+  address: "43 Railroad Place, Hopewell, NJ 08525"
+  lat: 40.3922
+  lng: -74.7605
+  website: "https://thehopewellmuseum.org/"
+  phone: "609-466-0103"
+  admission: "Free"
+  hours: "CURRENTLY CLOSED for interior renovation; exhibits targeted to reopen late 2026. Research appointments only in the meantime."
+  drive_min: 22
+  seasonal: false
+  appointment_only: true
+  source: "https://thehopewellmuseum.org/"
+  blurb: "A small-town Americana museum covering colonial-era Hopewell Valley life; currently mid-renovation and closed to walk-in visitors, so treat as a 'check back later' entry rather than a current stop."
+
+- id: brearley-house
+  name: "Brearley House (Lawrence Historical Society)"
+  category: house-museum
+  region: princeton
+  town: "Lawrenceville, NJ"
+  address: "100 Meadow Road, Lawrenceville, NJ 08648"
+  lat: 40.2925
+  lng: -74.7008
+  website: "https://www.thelhs.org/brearley-house"
+  phone: "609-895-1728"
+  admission: "UNKNOWN — confirm (likely free/donation)"
+  hours: "Guided tours 3rd Sunday of each month, 2:00–4:00pm; special tours by request."
+  drive_min: 37
+  seasonal: false
+  appointment_only: false
+  source: "https://www.thelhs.org/visit"
+  blurb: "An 1761 farmhouse maintained by the Lawrence Historical Society with monthly public tours; the Society also cares for the nearby 1830 Port Mercer Canal House on the D&R Canal."
+
+- id: isaac-watson-house
+  name: "Isaac Watson House"
+  category: house-museum
+  region: princeton
+  town: "Hamilton, NJ"
+  address: "151 Westcott Avenue, Hamilton Township, NJ 08610"
+  lat: 40.1915
+  lng: -74.7256
+  website: "https://www.njdar.org/watsonhouse.html"
+  phone: "UNKNOWN — confirm"
+  admission: "Donation-based"
+  hours: "Docent-guided open houses only: 1–4pm on the second Sunday of April, May, June, September, October, and November."
+  drive_min: 40
+  seasonal: true
+  appointment_only: false
+  source: "https://www.njdar.org/watsonhouse.html"
+  blurb: "Mercer County's oldest house (built 1708 by Isaac Watson), now headquarters of the NJ State Society Daughters of the American Revolution; open to the public only six specific Sundays a year for docent-led tours."
+
+- id: cranbury-museum
+  name: "Cranbury Museum"
+  category: history
+  region: princeton
+  town: "Cranbury, NJ"
+  address: "4 Park Place East, Cranbury, NJ 08512"
+  lat: 40.3128
+  lng: -74.5147
+  website: "https://www.cranburyhistory.org/history-museum"
+  phone: "609-655-2611"
+  admission: "Free"
+  hours: "Sundays 1:00–4:00pm."
+  drive_min: 42
+  seasonal: false
+  appointment_only: false
+  source: "https://www.cranburyhistory.org/history-museum"
+  blurb: "A small-town history museum run by the Cranbury Historical & Preservation Society in a village that's largely unchanged since the 18th/19th century. The farthest entry on the guide — genuinely borderline for the 45-minute radius."

@@ -1,0 +1,131 @@
+---
+layout: default
+title: "Museums Near New Hope, PA"
+needs_map: true
+---
+
+{%- assign museums = site.museums -%}
+{%- assign free_count = museums | where: "admission", "Free" | size -%}
+
+<section class="bk-hero">
+  <div class="bk-hero-inner">
+    <p class="bk-eyebrow">Bucks · Hunterdon · Doylestown · Princeton</p>
+    <h1>Museums near New&nbsp;Hope</h1>
+    <p class="bk-hero-sub">Every <strong>museum, historic house, and visitor center within about a 45-minute drive</strong> of New&nbsp;Hope, Pennsylvania — with current hours, admission, and links, grouped by area and mapped. Built to actually plan a day out.</p>
+    <div class="bk-hero-meta">
+      <span><strong>{{ museums | size }}</strong> museums</span>
+      <span>{{ site.regions | size }} areas</span>
+      <span>{{ free_count }} free to visit</span>
+      <span>~45&nbsp;min radius</span>
+    </div>
+    <a class="bk-hero-cta" href="#map">Explore the map ↓</a>
+  </div>
+</section>
+
+<section class="bk-section bk-legend-wrap">
+  <div class="bk-legend">
+    {% for r in site.regions %}
+    <div class="bk-legend-item">
+      <span class="bk-dot bk-dot-lg" style="background:{{ r.color }}"></span>
+      <div>
+        <strong>{{ r.label }}</strong>
+        <span class="bk-legend-blurb">{{ r.blurb }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{%- comment -%} ----- filters + overview map ----- {%- endcomment -%}
+<section class="bk-section" id="map">
+  <h2 class="bk-h2">Everything, mapped</h2>
+  <p class="bk-section-note">Every museum is a pin, colored by area. Click a pin for hours and a link. The filters below also narrow the lists further down the page.</p>
+  <div class="bk-filters" id="bk-filters">
+    <div class="bk-filter-group">
+      <span class="bk-filter-label">Area</span>
+      {% for r in site.regions %}
+      <button class="bk-chip is-on" data-filter="region" data-value="{{ r.id }}" style="--chip:{{ r.color }}">{{ r.label | split: "," | first }}</button>
+      {% endfor %}
+    </div>
+    <div class="bk-filter-group">
+      <span class="bk-filter-label">Type</span>
+      {% for c in site.museum_types %}
+      <button class="bk-chip bk-chip-cat is-on" data-filter="category" data-value="{{ c.id }}">{{ c.label }}</button>
+      {% endfor %}
+    </div>
+    <div class="bk-filter-group bk-filter-extras">
+      <label class="bk-toggle"><input type="checkbox" id="bk-free-only"> Free only</label>
+      <input class="bk-search" type="search" id="bk-search" placeholder="Search museums, towns…" aria-label="Search museums">
+      <button class="bk-reset" id="bk-reset" type="button">Reset</button>
+    </div>
+  </div>
+  <div id="bk-map-main" class="bk-map bk-map-main"></div>
+</section>
+
+{%- comment -%} ----- region jump nav ----- {%- endcomment -%}
+<section class="bk-section">
+  <div class="bk-jumpnav">
+    {% for r in site.regions %}
+      {% assign rc = museums | where: "region", r.id | size %}
+      <a href="#region-{{ r.id }}"><span class="bk-dot" style="background:{{ r.color }};margin:0"></span>{{ r.label | split: "," | first }} <strong>{{ rc }}</strong></a>
+    {% endfor %}
+  </div>
+</section>
+
+{%- comment -%} ----- region sections ----- {%- endcomment -%}
+{% for r in site.regions %}
+  {% assign region_museums = museums | where: "region", r.id %}
+  {% if region_museums.size > 0 %}
+  <section class="bk-section bk-region-sec" id="region-{{ r.id }}" data-region="{{ r.id }}">
+    <div class="bk-region-head">
+      <h2><span class="bk-dot bk-dot-lg" style="background:{{ r.color }}"></span>{{ r.label }}</h2>
+      <span class="bk-region-count" data-region-count="{{ r.id }}">{{ region_museums.size }}</span>
+    </div>
+    <p class="bk-region-blurb">{{ r.blurb }}</p>
+    <div class="bk-mgrid">
+      {% for m in region_museums %}
+        {%- assign cat = site.museum_types | where: "id", m.category | first -%}
+        <a class="bk-mcard" href="{{ m.url }}" style="--mcolor:{{ r.color }}"
+           data-region="{{ m.region }}" data-category="{{ m.category }}"
+           data-free="{% if m.admission == 'Free' %}1{% else %}0{% endif %}"
+           data-search="{{ m.name | append: ' ' | append: m.town | append: ' ' | append: m.category | downcase | escape }}">
+          <div class="bk-mcard-tags">
+            {% if cat %}<span class="bk-cat bk-cat-{{ m.category }}">{{ cat.label }}</span>{% endif %}
+            {% if m.admission == "Free" %}<span class="bk-cost bk-cost-free">Free</span>{% elsif m.admission and m.admission != "" %}<span class="bk-cost">{{ m.admission }}</span>{% endif %}
+            {% if m.seasonal %}<span class="bk-flag">Seasonal</span>{% endif %}
+            {% if m.appointment_only %}<span class="bk-flag">By appt</span>{% endif %}
+            {% if m.featured %}<span class="bk-star">★</span>{% endif %}
+          </div>
+          <h3 class="bk-mcard-title">{{ m.name }}</h3>
+          {% if m.town and m.town != "" %}<p class="bk-mcard-town">{{ m.town }}{% if m.drive_min %} · ~{{ m.drive_min }} min{% endif %}</p>{% endif %}
+          {% if m.hours and m.hours != "" %}<p class="bk-mcard-hours">{{ m.hours | truncate: 90 }}</p>{% endif %}
+          {% if m.blurb and m.blurb != "" %}<p class="bk-mcard-desc">{{ m.blurb | strip_html | truncate: 150 }}</p>{% endif %}
+          <span class="bk-mcard-more">Hours &amp; details →</span>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+
+<p class="bk-section bk-noresults" id="bk-noresults" hidden>No museums match those filters. <button class="bk-reset" id="bk-reset2" type="button">Reset filters</button></p>
+
+<script type="application/json" id="bk-data">
+[
+{% for m in museums %}{
+"id": {{ m.id | jsonify }},
+"name": {{ m.name | jsonify }},
+"region": {{ m.region | jsonify }},
+"category": {{ m.category | jsonify }},
+"town": {{ m.town | jsonify }},
+"hours": {{ m.hours | jsonify }},
+"admission": {{ m.admission | jsonify }},
+"page": {{ m.url | jsonify }},
+"address": {{ m.address | jsonify }},
+"lat": {{ m.lat | jsonify }},
+"lng": {{ m.lng | jsonify }}
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
+</script>
+<script type="application/json" id="bk-regions">{{ site.regions | jsonify }}</script>

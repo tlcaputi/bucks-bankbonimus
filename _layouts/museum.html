@@ -1,0 +1,90 @@
+---
+layout: default
+---
+{%- assign region = site.regions | where: "id", page.region | first -%}
+{%- assign cat = site.museum_types | where: "id", page.category | first -%}
+
+<article class="bk-detail">
+  <div class="bk-detail-inner">
+    <a class="bk-back" href="/#region-{{ page.region }}">← All museums</a>
+
+    <div class="bk-detail-tags">
+      {% if region %}<span class="bk-region-pill" style="--chip:{{ region.color }}"><span class="bk-dot" style="background:{{ region.color }}"></span>{{ region.label }}</span>{% endif %}
+      {% if cat %}<span class="bk-cat bk-cat-{{ page.category }}">{{ cat.label }}</span>{% endif %}
+      {% if page.admission == "Free" %}<span class="bk-cost bk-cost-free">Free</span>{% elsif page.admission and page.admission != "" %}<span class="bk-cost">{{ page.admission }}</span>{% endif %}
+      {% if page.seasonal %}<span class="bk-flag">Seasonal</span>{% endif %}
+      {% if page.appointment_only %}<span class="bk-flag">By appointment</span>{% endif %}
+      {% if page.featured %}<span class="bk-star">★ pick</span>{% endif %}
+    </div>
+
+    <h1 class="bk-detail-title">{{ page.name }}</h1>
+
+    {% if page.hours and page.hours != "" %}
+    <div class="bk-detail-meta">
+      <div class="bk-detail-when">
+        <span class="bk-detail-date">Hours</span>
+        <span class="bk-detail-time">{{ page.hours }}</span>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.content and page.content != "" %}
+    <div class="bk-detail-desc">{{ content }}</div>
+    {% endif %}
+
+    <div class="bk-detail-grid">
+      <div class="bk-fact"><span class="bk-fact-k">Where</span><span class="bk-fact-v">{% if page.address and page.address != "" %}{{ page.address }}{% elsif page.town and page.town != "" %}{{ page.town }}{% endif %}</span></div>
+      {% if page.admission and page.admission != "" %}<div class="bk-fact"><span class="bk-fact-k">Admission</span><span class="bk-fact-v">{{ page.admission }}</span></div>{% endif %}
+      {% if page.drive_min %}<div class="bk-fact"><span class="bk-fact-k">Drive from New Hope</span><span class="bk-fact-v">about {{ page.drive_min }} min</span></div>{% endif %}
+      {% if page.phone and page.phone != "" %}<div class="bk-fact"><span class="bk-fact-k">Phone</span><span class="bk-fact-v"><a href="tel:{{ page.phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}">{{ page.phone }}</a></span></div>{% endif %}
+    </div>
+
+    <div class="bk-detail-actions">
+      {% if page.website and page.website != "" %}<a class="bk-btn bk-btn-primary" href="{{ page.website }}" target="_blank" rel="noopener">Official website ↗</a>{% endif %}
+      {% if page.address and page.address != "" %}<a class="bk-btn" href="https://www.google.com/maps/dir/?api=1&destination={{ page.address | url_encode }}" target="_blank" rel="noopener">Get directions ↗</a>{% endif %}
+    </div>
+
+    {% if page.lat and page.lng %}
+    <div id="bk-detail-map" class="bk-map bk-detail-map"
+         data-lat="{{ page.lat }}" data-lng="{{ page.lng }}"
+         data-color="{% if region %}{{ region.color }}{% else %}#24433b{% endif %}"
+         data-title="{{ page.name | escape }}"></div>
+    {% endif %}
+
+    {% if page.source and page.source != "" %}
+    <p class="bk-detail-source">Hours &amp; details verified from <a href="{{ page.source }}" target="_blank" rel="noopener">{{ page.source }}</a>. Museums change hours seasonally — confirm on the museum's own site before you go.</p>
+    {% endif %}
+
+    {%- comment -%} more museums in the same area (collection is pre-sorted by name) {%- endcomment -%}
+    {%- assign samearea = site.museums | where: "region", page.region -%}
+    {% assign othercount = samearea.size | minus: 1 %}
+    {% if othercount > 0 %}
+    <div class="bk-detail-more">
+      <h2>More in {% if region %}{{ region.label }}{% else %}this area{% endif %}</h2>
+      <ul class="bk-more-list">
+        {% for m in samearea %}{% unless m.id == page.id %}
+        <li><a href="{{ m.url }}"><span class="bk-more-time">{{ m.town }}</span> {{ m.name }}</a></li>
+        {% endunless %}{% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</article>
+
+{% if page.lat and page.lng %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var el = document.getElementById("bk-detail-map");
+  if (!el || !window.L) return;
+  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
+  var map = L.map(el, { scrollWheelZoom: false }).setView([lat, lng], 14);
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: "abcd", maxZoom: 19
+  }).addTo(map);
+  L.circleMarker([lat, lng], { radius: 9, fillColor: el.dataset.color, color: "#fff", weight: 2, fillOpacity: 0.95 })
+    .addTo(map).bindPopup(el.dataset.title).openPopup();
+  setTimeout(function () { map.invalidateSize(); map.setView([lat, lng], 14); }, 150);
+});
+</script>
+{% endif %}

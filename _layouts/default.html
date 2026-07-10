@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  {%- if page.description -%}
+    {%- assign seo_description = page.description -%}
+  {%- else -%}
+    {%- assign seo_description = site.description -%}
+  {%- endif -%}
+  {%- assign seo_description = seo_description | strip_html | strip_newlines | escape | truncate: 220 -%}
+  {%- assign seo_image = site.og_image -%}
+
+  <title>{% if page.title %}{{ page.title | strip_html }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ seo_description }}">
+  <link rel="canonical" href="{{ page.url | replace: '/index.html', '/' | absolute_url }}">
+
+  <meta property="og:url" content="{{ page.url | replace: '/index.html', '/' | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title | strip_html }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{{ site.locale | default: 'en_US' }}">
+  <meta property="og:type" content="website">
+  {% if seo_image %}<meta property="og:image" content="{{ seo_image }}">{% endif %}
+  <meta name="twitter:card" content="{% if seo_image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | strip_html }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  {% if seo_image %}<meta name="twitter:image" content="{{ seo_image }}">{% endif %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#24433b">
+
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-sans-normal-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-serif-display-normal-latin.woff2" crossorigin>
+
+  {%- assign want_map = false -%}
+  {%- if page.needs_map or page.lat -%}{%- assign want_map = true -%}{%- endif -%}
+  {%- if want_map -%}
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  {%- endif -%}
+
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="/assets/css/bucks.css">
+</head>
+
+<body class="bk-standalone">
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="bk-footer" role="contentinfo">
+    <div class="bk-footer-inner">
+      <p class="bk-footer-title"><a href="/">Museums Near New Hope</a></p>
+      <p class="bk-footer-note">A personal guide to museums, historic houses, and visitor centers within about a 45-minute drive of New Hope, PA — across Bucks County, Hunterdon County, Doylestown, Lambertville, Princeton and Trenton. Not affiliated with any museum. <strong>Hours and admission change seasonally — always confirm on the museum's own website before you go</strong>, especially for appointment-only and seasonal sites.</p>
+      <p class="bk-footer-copy">&copy; {{ site.time | date: '%Y' }} &middot; Made by <a href="https://www.bankbonimus.com/">Bankbonimus</a></p>
+    </div>
+  </footer>
+
+  {% if want_map %}
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  {% if page.needs_map %}<script src="/assets/js/map.js"></script>{% endif %}
+  {% endif %}
+
+</body>
+</html>
