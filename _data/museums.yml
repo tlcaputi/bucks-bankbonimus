@@ -1163,3 +1163,950 @@
   appointment_only: false
   source: "https://www.cranburyhistory.org/history-museum"
   blurb: "A small-town history museum run by the Cranbury Historical & Preservation Society in a village that's largely unchanged since the 18th/19th century. The farthest entry on the guide — genuinely borderline for the 45-minute radius."
+
+# ============================================================
+# ROUND 2 — exhaustive town-by-town + thematic discovery (2026-07-09)
+# 52 additional verified museums. Grouped by region (collection re-groups by
+# `region` at render time, so file order within a region is cosmetic).
+# ============================================================
+
+# ---- New Hope & Washington Crossing ----
+- id: delaware-valley-fire-museum
+  name: "Delaware Valley Fire Museum"
+  category: specialty
+  region: new-hope
+  town: "New Hope, PA"
+  address: "46 N Sugan Rd, New Hope, PA 18938"
+  lat: 40.365045
+  lng: -74.967153
+  website: "https://www.delawarevalleyfiremuseum.org/"
+  phone: "215-862-2692"
+  admission: "Free"
+  hours: "Most Saturdays 11am–3pm, May–Oct; by appointment off-season."
+  drive_min: 4
+  seasonal: true
+  appointment_only: false
+  source: "https://www.delawarevalleyfiremuseum.org/visit-us"
+  blurb: "A fire-service museum built into the working Eagle Fire Company firehouse, covering the history of Delaware River-valley volunteer fire and EMS companies with vintage apparatus, uniforms and hand-drawn carts. Right in downtown New Hope."
+
+- id: new-hope-arts-center
+  name: "New Hope Arts Center"
+  category: art
+  region: new-hope
+  town: "New Hope, PA"
+  address: "2 Stockton Ave, New Hope, PA 18938"
+  lat: 40.363529
+  lng: -74.953007
+  website: "http://www.newhopearts.org/"
+  phone: "215-862-9606"
+  admission: "Free"
+  hours: "Fri–Sun 12–5pm, but ONLY during scheduled exhibitions — confirm current exhibit dates."
+  drive_min: 3
+  seasonal: true
+  appointment_only: false
+  source: "https://www.visitnewhope.com/arts-galleries/"
+  blurb: "A nonprofit contemporary-art center in a converted second-floor space, mounting 6–8 major sculpture/painting/craft exhibitions a year plus an outdoor public-art sculpture program around New Hope."
+
+- id: erwin-stover-house
+  name: "Erwin-Stover House"
+  category: house-museum
+  region: new-hope
+  town: "Erwinna, PA"
+  address: "Tinicum Park, 963 River Road, Erwinna, PA 18920"
+  lat: 40.5088
+  lng: -75.0713
+  website: "https://www.buckscounty.gov/1550/The-Erwin-Stover-House"
+  phone: "215-757-0571"
+  admission: "UNKNOWN — confirm (county-run; likely free/donation)"
+  hours: "Weekends 12–4pm, May–Oct; weekday group tours by appointment."
+  drive_min: 22
+  seasonal: true
+  appointment_only: false
+  source: "https://www.buckscounty.gov/1550/The-Erwin-Stover-House"
+  blurb: "A 12-room brick farmhouse (1810 core, expanded 1860s–1880s) on 126 acres of county parkland along the Delaware, with period furnishings, a Victorian barn, and exhibits on the Lenape who first inhabited the area. Run by Bucks County Parks & Recreation."
+
+- id: riegelsville-historical-society
+  name: "Riegelsville Historical Society Historic Room"
+  category: history
+  region: new-hope
+  town: "Riegelsville, PA"
+  address: "615 Easton Road (Rt 611), Riegelsville, PA 18077"
+  lat: 40.5964
+  lng: -75.1959
+  website: "https://www.riegelsvillelibrary.info/riegelsville-historical-society"
+  phone: "610-749-2357"
+  admission: "UNKNOWN — confirm (likely free)"
+  hours: "By appointment only — call ahead."
+  drive_min: 35
+  seasonal: false
+  appointment_only: true
+  source: "https://www.riegelsvillelibrary.info/riegelsville-historical-society"
+  blurb: "A small archive room inside the Riegelsville Public Library preserving local records and photos tied to Benjamin Riegel and the town's founding. Access is by appointment only; borderline on the 45-minute radius."
+
+# ---- Lambertville, Stockton & Hunterdon (NJ) ----
+- id: northlandz
+  name: "Northlandz — Miniature Wonderland & Train Museum"
+  category: specialty
+  region: lambertville
+  town: "Flemington, NJ"
+  address: "495 US Highway 202, Flemington, NJ 08822"
+  lat: 40.517083
+  lng: -74.819331
+  website: "https://northlandz.com/"
+  phone: "908-782-4022"
+  admission: "~$40 adults indoor (senior/child pricing varies; outdoor train ride extra) — confirm"
+  hours: "Daily 10am–6pm."
+  drive_min: 27
+  seasonal: false
+  appointment_only: false
+  source: "https://northlandz.com/hours-location"
+  blurb: "Guinness World Record holder for the world's largest model railroad (8+ miles of track); also houses a 200+ piece doll museum with a 94-room dollhouse, an art gallery, and a 2,000-pipe organ hall."
+
+- id: samuel-fleming-house
+  name: "Samuel Fleming House Museum (Fleming Castle)"
+  category: house-museum
+  region: lambertville
+  town: "Flemington, NJ"
+  address: "5 Bonnell Street, Flemington, NJ 08822"
+  lat: 40.5108
+  lng: -74.8605
+  website: "https://www.samuelfleminghouse.org/"
+  phone: "908-782-4607"
+  admission: "UNKNOWN — confirm (small donation typical)"
+  hours: "Tours the 2nd Saturday of each month; also periodic events and by appointment."
+  drive_min: 28
+  seasonal: true
+  appointment_only: true
+  source: "https://www.samuelfleminghouse.org/visit-events"
+  blurb: "Flemington's oldest surviving house (colonial-era, associated with founder Samuel Fleming), restored as a period house museum with gardens. A separate building and volunteer group from the Doric House / Hunterdon County Historical Society."
+
+- id: artyard-frenchtown
+  name: "ArtYard"
+  category: art
+  region: lambertville
+  town: "Frenchtown, NJ"
+  address: "13 Front Street, Frenchtown, NJ 08825"
+  lat: 40.5238
+  lng: -75.0622
+  website: "https://artyard.org/"
+  phone: "908-996-5018"
+  admission: "UNKNOWN — confirm gallery/ticketed-event pricing"
+  hours: "Thu 11am–7pm; Fri–Sun 11am–5pm."
+  drive_min: 18
+  seasonal: false
+  appointment_only: false
+  source: "https://artyard.org/plan-your-visit/"
+  blurb: "A contemporary alternative art center in a purpose-built space on Frenchtown's Front Street — multiple exhibition galleries, a 162-seat theater, and a residency program."
+
+- id: milford-borough-historical-society
+  name: "Milford Borough Historical Society Museum"
+  category: history
+  region: lambertville
+  town: "Milford, NJ"
+  address: "121 Fairview Avenue, Milford, NJ 08848"
+  lat: 40.5540
+  lng: -75.1015
+  website: "https://milfordhistory.org/"
+  phone: "908-328-6515"
+  admission: "UNKNOWN — confirm (likely free/donation)"
+  hours: "Sat, Sun & Wed 1–4pm."
+  drive_min: 25
+  seasonal: false
+  appointment_only: false
+  source: "https://hunterdoncountyalive.com/business/museums-historical-sites.cfm"
+  blurb: "A small volunteer-run local-history museum and exhibit space for Milford Borough, founded 2009, with docent-guided tours, an oral-history project, and rotating local-history exhibits."
+
+- id: east-amwell-museum
+  name: "East Amwell Museum (Clawson House)"
+  category: house-museum
+  region: lambertville
+  town: "Ringoes, NJ"
+  address: "1053 Old York Road, Ringoes, NJ 08551"
+  lat: 40.4210
+  lng: -74.8370
+  website: "https://eastamwellhistory.org/east-amwell-museum/"
+  phone: "908-237-3303"
+  admission: "Free"
+  hours: "2nd and 4th weekend of each month, 2–4pm (except holidays)."
+  drive_min: 24
+  seasonal: true
+  appointment_only: false
+  source: "https://eastamwellhistory.org/east-amwell-museum/"
+  blurb: "A restored 1880s house at the entrance to Clawson Memorial Park, furnished to depict 1880–1920 life — Victorian bedroom, period living room, and a 1920s kitchen with icebox and Hoosier cabinet. Covers East Amwell / Ringoes / Reaville history."
+
+- id: oak-summit-schoolhouse
+  name: "Oak Summit School"
+  category: history
+  region: lambertville
+  town: "Kingwood Township, NJ"
+  address: "190 Oak Summit Rd, Frenchtown, NJ 08825"
+  lat: 40.549772
+  lng: -74.989432
+  website: "https://www.hmdb.org/m.asp?m=16593"
+  phone: "UNKNOWN — confirm"
+  admission: "UNKNOWN — confirm"
+  hours: "No published public hours; society meets 3rd Tuesday monthly. Appointment/event only — confirm before visiting."
+  drive_min: 21
+  seasonal: true
+  appointment_only: true
+  source: "https://www.hmdb.org/m.asp?m=16593"
+  blurb: "An 1869 one-room schoolhouse in rural Kingwood Township, preserved by the Oak Summit School Historical Society since 1979 as a small museum of local one-room-school history."
+
+- id: alexandria-township-museum
+  name: "Alexandria Township Museum (Prevost House)"
+  category: house-museum
+  region: lambertville
+  town: "Alexandria Township, NJ"
+  address: "1100 Frenchtown-Milford Road, Frenchtown, NJ 08825"
+  lat: 40.5403
+  lng: -75.0649
+  website: "https://alexandriatwp.wordpress.com/other-links/alexandria-historical-society/"
+  phone: "908-996-4565"
+  admission: "UNKNOWN — confirm"
+  hours: "UNKNOWN — confirm; no regular posted hours — likely open-house events / by appointment."
+  drive_min: 20
+  seasonal: true
+  appointment_only: true
+  source: "https://alexandriatwp.wordpress.com/other-links/alexandria-historical-society/"
+  blurb: "A historic Prevost farmhouse donated to Alexandria Township and leased to the historical society as a library and local-history museum. All-volunteer, no paid staff — call ahead."
+
+- id: readington-bouman-stickney-farmstead
+  name: "Readington Museums — Bouman-Stickney Farmstead"
+  category: living-history
+  region: lambertville
+  town: "Stanton, NJ"
+  address: "114 Dreahook Road, Stanton, NJ 08833"
+  lat: 40.5885
+  lng: -74.7935
+  website: "https://www.readingtontwpnj.gov/community/readington-museum"
+  phone: "908-236-2327"
+  admission: "Free"
+  hours: "UNKNOWN — confirm; primarily open-house events and by appointment, not regular walk-in hours."
+  drive_min: 32
+  seasonal: true
+  appointment_only: true
+  source: "https://www.readingtontwpnj.gov/bowman-stickney"
+  blurb: "A 1741 Dutch bank farmhouse (former weekend home of Broadway's Howard Lindsay & Dorothy Stickney), now township-owned headquarters of the Readington Museums program, which also administers the Eversole-Hall House."
+
+- id: eversole-hall-house
+  name: "Eversole-Hall House"
+  category: house-museum
+  region: lambertville
+  town: "Whitehouse Station, NJ"
+  address: "509 County Road 523, Whitehouse Station, NJ 08889"
+  lat: 40.5989
+  lng: -74.7775
+  website: "https://www.readingtontwpnj.gov/eversole-hall-house"
+  phone: "908-236-2327"
+  admission: "Free"
+  hours: "UNKNOWN — confirm; open by appointment / during events."
+  drive_min: 32
+  seasonal: true
+  appointment_only: true
+  source: "https://www.readingtontwpnj.gov/eversole-hall-house"
+  blurb: "A restored 18th/19th-century farmhouse in Readington Township, opened as a museum in 1991. Administered with the Bouman-Stickney Farmstead under the Readington Museums program."
+
+- id: tewksbury-oldwick-carriage-house
+  name: "Tewksbury Historical Society — Oldwick Carriage House"
+  category: history
+  region: lambertville
+  town: "Oldwick, NJ"
+  address: "5 James Street, Oldwick, NJ 08858"
+  lat: 40.6470
+  lng: -74.7770
+  website: "https://tewksburyhistory.net/"
+  phone: "908-832-6734"
+  admission: "UNKNOWN — confirm"
+  hours: "By appointment only — call to schedule."
+  drive_min: 42
+  seasonal: false
+  appointment_only: true
+  source: "https://tewksburyhistory.net/"
+  blurb: "A restored former township garage in Oldwick village, displaying exhibits on the Rockaway Valley Railroad, a restored antique dollhouse, and vintage Tewksbury Winery bottles. On the outer edge of the radius (~42 min)."
+
+- id: solitude-heritage-museum
+  name: "Solitude Heritage Museum (1760 Joseph Turner House)"
+  category: house-museum
+  region: lambertville
+  town: "Hampton, NJ"
+  address: "117 Van Syckles Road, Hampton, NJ 08827"
+  lat: 40.6567
+  lng: -74.9597
+  website: "https://unionforgeheritage.org/"
+  phone: "973-980-9109"
+  admission: "UNKNOWN — confirm"
+  hours: "Sundays 2–4pm, plus special events April–December."
+  drive_min: 43
+  seasonal: true
+  appointment_only: false
+  source: "https://unionforgeheritage.org/"
+  blurb: "A 1760 ironworks-superintendent's house next to Spruce Run Reservoir, restored by the Union Forge Heritage Association with period furnishings and Union Ironworks exhibits. Borderline for the 45-minute radius (~43 min)."
+
+- id: township-of-lebanon-museum
+  name: "Township of Lebanon Museum"
+  category: history
+  region: lambertville
+  town: "New Hampton, NJ"
+  address: "57 Musconetcong River Rd, Hampton, NJ 08827"
+  lat: 40.720202
+  lng: -74.962434
+  website: "https://lebanontownship.net/museum/"
+  phone: "908-537-6464"
+  admission: "Free"
+  hours: "Tue & Thu 9:30am–5pm, Sat 1–5pm."
+  drive_min: 40
+  seasonal: false
+  appointment_only: false
+  source: "https://lebanontownship.net/museum/"
+  blurb: "The former 1823–25 New Hampton schoolhouse, now Lebanon Township's local-history museum covering the township's mills, farms and rail history, with a restored horse-drawn school bobsleigh. On the outer edge of the radius."
+
+# ---- Doylestown & Central Bucks (PA) ----
+- id: stover-myers-mill
+  name: "Stover-Myers Mill"
+  category: living-history
+  region: doylestown
+  town: "Pipersville, PA"
+  address: "414 Dark Hollow Road, Pipersville, PA 18947"
+  lat: 40.4370
+  lng: -75.1229
+  website: "https://www.buckscounty.gov/1571/The-Stover-Myers-Mill"
+  phone: "215-757-0571"
+  admission: "UNKNOWN — confirm (likely free, county-run)"
+  hours: "Weekends 12–4pm, Jun–Oct; special 'Milling Days'."
+  drive_min: 20
+  seasonal: true
+  appointment_only: false
+  source: "https://www.buckscounty.gov/1571/The-Stover-Myers-Mill"
+  blurb: "A water-powered gristmill built in 1800 on the Tohickon Creek and operated continuously until 1955, set in a 26-acre county park. Periodic 'Milling Days' run the original millworks."
+
+- id: kookers-central-store-museum
+  name: "Kooker's Central Store Museum"
+  category: history
+  region: doylestown
+  town: "Dublin, PA"
+  address: "100 Maple Avenue, Dublin, PA 18917"
+  lat: 40.3733
+  lng: -75.2025
+  website: "https://www.facebook.com/KookersDublin/"
+  phone: "267-664-0598"
+  admission: "Free"
+  hours: "Limited open-house weekends only, roughly quarterly — check Facebook for current dates."
+  drive_min: 24
+  seasonal: true
+  appointment_only: false
+  source: "https://www.facebook.com/KookersDublin/"
+  blurb: "A preserved early-to-mid-20th-century general store and post office run by the Dublin Historical Society, with original store fixtures, goods, and borough artifacts. Open only on a handful of open-house weekends each year."
+
+- id: richland-historical-society-shelly-school
+  name: "Richland Historical Society — Shelly School Museum"
+  category: history
+  region: doylestown
+  town: "Richlandtown, PA"
+  address: "130 Richlandtown Pike, Quakertown, PA 18951"
+  lat: 40.4525
+  lng: -75.3267
+  website: "https://www.richlandhistoricalsociety.org/"
+  phone: "215-536-5505"
+  admission: "UNKNOWN — confirm (likely free/donation)"
+  hours: "No fixed hours — group/school tours by request; monthly meetings 3rd Sunday 2pm. Effectively appointment-based."
+  drive_min: 30
+  seasonal: false
+  appointment_only: true
+  source: "https://www.richlandhistoricalsociety.org/"
+  blurb: "An 1885 one-room schoolhouse (interior unchanged since its last class in 1957, NRHP-listed) plus an adjoining museum building of local records, books, and artifacts. Hosts an annual July 4th bell-ringing."
+
+- id: fire-one-museum-warrington
+  name: "Fire One Museum"
+  category: specialty
+  region: doylestown
+  town: "Warrington, PA"
+  address: "2099 Maple Avenue, Warrington, PA 18976"
+  lat: 40.2292
+  lng: -75.1408
+  website: "https://www.thefireone.com/museum---programs"
+  phone: "267-452-1009"
+  admission: "UNKNOWN — confirm"
+  hours: "No drop-in hours; visits arranged via online booking."
+  drive_min: 32
+  seasonal: false
+  appointment_only: true
+  source: "https://www.thefireone.com/museum---programs"
+  blurb: "A restored 1934 firehouse nonprofit honoring Warrington's volunteer fire companies, with a vintage firetruck and firefighting memorabilia. Access is by advance booking only."
+
+- id: county-line-schoolhouse-warrington
+  name: "County Line Road School House"
+  category: house-museum
+  region: doylestown
+  town: "Warrington, PA"
+  address: "10 Folly Road, Warrington, PA 18976"
+  lat: 40.2369
+  lng: -75.1800
+  website: "https://warringtontownship.org/community/history/former_schools.php"
+  phone: "215-343-9350"
+  admission: "Free"
+  hours: "Roughly 4 public open houses a year; schedule via the Warrington Township Historical Society."
+  drive_min: 35
+  seasonal: true
+  appointment_only: false
+  source: "https://warringtontownship.org/community/history/former_schools.php"
+  blurb: "A restored ~1840s one-room stone schoolhouse (in use until 1928) kept as a small living-history classroom exhibit; the site ties to the family history of Ulysses S. Grant's grandparents."
+
+- id: johnsville-centrifuge-science-museum
+  name: "Johnsville Centrifuge & Science Museum"
+  category: specialty
+  region: doylestown
+  town: "Warminster, PA"
+  address: "599 Newtown Road, Warminster, PA 18974"
+  lat: 40.191636
+  lng: -75.073548
+  website: "https://nadcmuseum.org/"
+  phone: "267-250-8841"
+  admission: "UNKNOWN — confirm (donation-based)"
+  hours: "Noon–3pm, 2nd Sunday of each month; group/STEM tours by appointment."
+  drive_min: 30
+  seasonal: false
+  appointment_only: false
+  source: "https://nadcmuseum.org/"
+  blurb: "Preserves the former Naval Air Development Center and the Johnsville human centrifuge (the 'Iron Maiden') used to train Mercury, Gemini and Apollo astronauts. A distinct nonprofit sharing a building with Craven Hall."
+
+- id: william-tennent-house
+  name: "William Tennent House"
+  category: house-museum
+  region: doylestown
+  town: "Warminster, PA"
+  address: "880 York Road, Warminster, PA 18974"
+  lat: 40.215325
+  lng: -75.099536
+  website: "https://williamtennenthouse.org/"
+  phone: "UNKNOWN — confirm"
+  admission: "UNKNOWN — confirm"
+  hours: "No standing hours; tours by appointment; occasional open houses."
+  drive_min: 27
+  seasonal: true
+  appointment_only: true
+  source: "https://williamtennenthouse.org/"
+  blurb: "Home of Rev. William Tennent, founder of the 1727 'Log College,' forerunner of Princeton. Under restoration by a nonprofit association with occasional open houses and appointment tours."
+
+- id: stoogeum
+  name: "The Stoogeum"
+  category: specialty
+  region: doylestown
+  town: "Ambler, PA"
+  address: "904 Sheble Lane, Ambler, PA 19002"
+  lat: 40.1779467
+  lng: -75.2241524
+  website: "https://stoogeum.com/"
+  phone: "267-468-0810"
+  admission: "$10 adults; $8 senior/student/military; 12 & under free"
+  hours: "Weekday appointment slots only (10am–12pm or 2–4pm); not open weekends."
+  drive_min: 37
+  seasonal: false
+  appointment_only: true
+  source: "https://stoogeum.com/visit/"
+  blurb: "The world's only Three Stooges museum — roughly 100,000 pieces of memorabilia over three floors. Appointment-only two-hour weekday visit blocks, on the Montgomery-County edge of the radius."
+
+- id: amy-yerkes-museum-hatboro
+  name: "Amy B. Yerkes Museum of Hatboro History"
+  category: history
+  region: doylestown
+  town: "Hatboro, PA"
+  address: "130 Spring Avenue, Hatboro, PA 19040"
+  lat: 40.1735118
+  lng: -75.1104720
+  website: "https://www.millbrooksociety.org/museum-collection"
+  phone: "215-957-1877"
+  admission: "UNKNOWN — confirm"
+  hours: "Open during Pennypack Community Center events, select Wednesdays, and by appointment."
+  drive_min: 28
+  seasonal: false
+  appointment_only: true
+  source: "https://www.millbrooksociety.org/museum-collection"
+  blurb: "A small local-history museum (run by the Millbrook Society) with military items, Indigenous artifacts, antique Hatboro-made toys and stoves, and Loller Academy pieces. Very limited public hours — call ahead."
+
+- id: wings-of-freedom-aviation-museum
+  name: "Wings of Freedom Aviation Museum"
+  category: military
+  region: doylestown
+  town: "Horsham, PA"
+  address: "1155 Easton Road, Horsham, PA 19044"
+  lat: 40.1982
+  lng: -75.1386
+  website: "https://wingsoffreedommuseum.org/"
+  phone: "215-672-2277"
+  admission: "$10 adults; $8 (65+); $5 ages 6–18; under 6 free"
+  hours: "Wed–Fri 10:30am–3pm; Sat–Sun 10:30am–4pm; closed Mon–Tue."
+  drive_min: 35
+  seasonal: false
+  appointment_only: false
+  source: "https://wingsoffreedommuseum.org/visit/"
+  blurb: "A hands-on aviation museum beside the former Naval Air Station Willow Grove, with roughly 17–20 restored aircraft, flight gear, and Pitcairn autogyro history. On the Montgomery-County edge of the radius."
+
+- id: graeme-park
+  name: "Graeme Park (Keith House)"
+  category: house-museum
+  region: doylestown
+  town: "Horsham, PA"
+  address: "859 County Line Road, Horsham, PA 19044"
+  lat: 40.216996
+  lng: -75.15099
+  website: "https://www.graemepark.org/"
+  phone: "215-343-0965"
+  admission: "Grounds free; house tour $8 adults / $6 senior & youth / under 5 free"
+  hours: "Fri–Sat 10am–4pm, Sun 12–4pm (last tour 3pm); grounds daily."
+  drive_min: 36
+  seasonal: false
+  appointment_only: false
+  source: "https://www.graemepark.org/visit/"
+  blurb: "Horsham's only National Historic Landmark — the sole surviving residence (c.1722) of a colonial Pennsylvania governor, later home to poet Elizabeth Graeme Fergusson. On the Montgomery-County edge of the radius."
+
+- id: upper-moreland-historical-association
+  name: "Upper Moreland Historical Association"
+  category: history
+  region: doylestown
+  town: "Willow Grove, PA"
+  address: "117 Park Avenue, Willow Grove, PA 19090"
+  lat: 40.144335
+  lng: -75.117795
+  website: "https://umha.com/"
+  phone: "215-657-1215"
+  admission: "UNKNOWN — confirm (likely free/donation)"
+  hours: "Thursdays 11am–1pm; other times by appointment."
+  drive_min: 37
+  seasonal: false
+  appointment_only: false
+  source: "https://umha.com/"
+  blurb: "An archival collection on Upper Moreland Township history, including the vanished Willow Grove Amusement Park (closed 1975). One weekly walk-in window, on the Montgomery-County edge of the radius."
+
+- id: lansdale-historical-society
+  name: "Lansdale Historical Society — Jenkins Homestead"
+  category: house-museum
+  region: doylestown
+  town: "Lansdale, PA"
+  address: "137 Jenkins Avenue, Lansdale, PA 19446"
+  lat: 40.239213
+  lng: -75.281095
+  website: "https://lansdalehistory.org/"
+  phone: "215-855-1872"
+  admission: "Free (donations welcome)"
+  hours: "Wed & Thu 11am–3pm, Sat 9:30am–12pm (confirm — listings vary)."
+  drive_min: 37
+  seasonal: false
+  appointment_only: false
+  source: "https://lansdalehistory.org/contact/"
+  blurb: "A restored 1770 Federalist-style farmstead — the oldest building in original Lansdale borough — plus a research center with 150+ years of local newspaper and genealogy archives. On the Montgomery-County edge of the radius."
+
+- id: hatfield-museum-history-society
+  name: "Hatfield Museum and History Society"
+  category: history
+  region: doylestown
+  town: "Hatfield, PA"
+  address: "1702 Cowpath Road, Hatfield, PA 19440"
+  lat: 40.274547
+  lng: -75.291595
+  website: "https://www.hatfieldhistory.org/"
+  phone: "215-362-0428"
+  admission: "Free (donations welcome)"
+  hours: "By appointment only, generally Mon–Fri 9am–4pm."
+  drive_min: 40
+  seasonal: false
+  appointment_only: true
+  source: "https://www.hatfieldhistory.org/"
+  blurb: "A small local-history museum for Hatfield Township/Borough — Lenape history, railroad and trolley history, and a genealogy room. Appointment-only and at the outer edge of the 45-minute radius."
+
+# ---- Newtown & Lower Bucks (PA) ----
+- id: wrightstown-octagonal-schoolhouse
+  name: "Wrightstown Octagonal Schoolhouse"
+  category: history
+  region: lower-bucks
+  town: "Wrightstown, PA"
+  address: "2091 Second Street Pike (PA-232 at Swamp Rd), Wrightstown, PA 18940"
+  lat: 40.254844
+  lng: -75.006372
+  website: "https://www.wrightstownpa.org/information/history-of-wrightstown-township/octagonal-schoolhouse/"
+  phone: "215-598-3313"
+  admission: "Free"
+  hours: "Open house 3rd Sunday of each month, May–Oct, 1–5pm."
+  drive_min: 17
+  seasonal: true
+  appointment_only: false
+  source: "https://en.wikipedia.org/wiki/Wrightstown_Octagonal_Schoolhouse"
+  blurb: "Built 1802, the last surviving of about 10 octagonal schoolhouses once in Bucks County; a subscription school until 1850, restored in the 1990s and NRHP-listed. Run by the township Historical Commission."
+
+- id: hicks-art-center-gallery
+  name: "Hicks Art Center Gallery"
+  category: art
+  region: lower-bucks
+  town: "Newtown, PA"
+  address: "275 Swamp Road, Newtown, PA 18940"
+  lat: 40.2394
+  lng: -74.9658
+  website: "https://hicksgallery.bucks.edu/"
+  phone: "215-504-8531"
+  admission: "Free"
+  hours: "Tue–Fri 9am–5pm, Sat 12–4pm during scheduled exhibitions (gaps between shows / college breaks)."
+  drive_min: 20
+  seasonal: true
+  appointment_only: false
+  source: "https://hicksgallery.bucks.edu/"
+  blurb: "A free public gallery on the Bucks County Community College campus showing rotating juried and curated contemporary-art exhibitions, an annual regional high-school art show, and occasional new-media shows."
+
+- id: tyler-park-center-for-the-arts
+  name: "Tyler Park Center for the Arts"
+  category: art
+  region: lower-bucks
+  town: "Newtown, PA"
+  address: "10 Stable Mill Road, Tyler State Park, Newtown, PA 18940"
+  lat: 40.2340
+  lng: -74.9816
+  website: "https://tylerparkarts.org/"
+  phone: "267-218-0290"
+  admission: "Free (sculpture garden); class/studio fees vary"
+  hours: "Sculpture garden whenever the park is open; studios Mon–Thu 10am–2:30pm & 7:30–10pm, Sat 10am–2:30pm."
+  drive_min: 22
+  seasonal: false
+  appointment_only: false
+  source: "https://tylerparkarts.org/faqs/"
+  blurb: "A converted equestrian/hay barn inside Tyler State Park used as artist studios and workshop space, with a public sculpture garden, periodic exhibitions, and the annual 'Crafts in the Meadow' show."
+
+- id: northampton-township-archives
+  name: "Northampton Township Historical Society Archives"
+  category: history
+  region: lower-bucks
+  town: "Richboro, PA"
+  address: "25 Upper Holland Road, Richboro, PA 18954"
+  lat: 40.2097
+  lng: -75.0089
+  website: "https://freelibrarynt.org/about/township-archives/"
+  phone: "215-357-3050"
+  admission: "Free"
+  hours: "Mon 4–7pm, Wed 1–4pm, Sat 9am–12pm; other times by appointment."
+  drive_min: 28
+  seasonal: false
+  appointment_only: false
+  source: "https://freelibrarynt.org/about/township-archives/"
+  blurb: "A walk-in local-history research archive inside the township library, holding 100+ collections (1700s–present) of genealogy, property files, maps, and photos. More a research room than an exhibit hall."
+
+- id: churchville-nature-center
+  name: "Churchville Nature Center"
+  category: science-nature
+  region: lower-bucks
+  town: "Churchville, PA"
+  address: "501 Churchville Lane, Churchville, PA 18966"
+  lat: 40.1878
+  lng: -74.9944
+  website: "https://www.churchvillenaturecenter.org/"
+  phone: "215-357-4005"
+  admission: "Visitor Center free; seasonal Butterfly House $8 adults / $6 senior / $5 child"
+  hours: "Visitor Center Tue–Sun 10am–5pm; trails dawn–dusk."
+  drive_min: 33
+  seasonal: false
+  appointment_only: false
+  source: "https://www.churchvillenaturecenter.org/"
+  blurb: "The first nature center in Bucks County (1964), a 65-acre preserve whose visitor center has live-animal displays and native gardens, plus two miles of trails and a seasonal native Butterfly House."
+
+- id: gather-place-museum
+  name: "Gather Place Museum (Old A.M.E. Church of Yardley)"
+  category: living-history
+  region: lower-bucks
+  town: "Yardley, PA"
+  address: "188 South Canal Street, Yardley, PA 19067"
+  lat: 40.2372856
+  lng: -74.8304025
+  website: "https://gatherplacemuseum.org/"
+  phone: "215-595-2722"
+  admission: "Free"
+  hours: "Fri & Sat 12–3pm; other days by appointment."
+  drive_min: 17
+  seasonal: false
+  appointment_only: false
+  source: "https://gatherplacemuseum.org/"
+  blurb: "Housed in Yardley's 1877 African Methodist Episcopal Church, a living-history museum surfacing the stories of African Americans, Quakers, and women in Bucks County — including Underground Railroad connections — through immersive exhibits and first-person portrayals."
+
+- id: bensalem-historical-society
+  name: "Historical Society of Bensalem Township"
+  category: history
+  region: lower-bucks
+  town: "Bensalem, PA"
+  address: "3211 Knights Road, Bensalem, PA 19020"
+  lat: 40.1092039
+  lng: -74.9461189
+  website: "http://www.bensalemhistoricalsociety.com/"
+  phone: "215-639-6575"
+  admission: "Free (donations welcome)"
+  hours: "Wed & Sat 10am–12pm; additional hours by appointment."
+  drive_min: 35
+  seasonal: false
+  appointment_only: false
+  source: "http://www.bensalemhistoricalsociety.com/"
+  blurb: "Founded 1977, a township society with a small museum and research library on Bensalem's 300+ year history — photos, maps, deeds, genealogy, every local high-school yearbook, and vintage wedding gowns."
+
+- id: growden-mansion
+  name: "Growden Mansion (Trevose Manor)"
+  category: house-museum
+  region: lower-bucks
+  town: "Bensalem, PA"
+  address: "5408 Neshaminy Valley Drive, Bensalem, PA 19020"
+  lat: 40.1474194
+  lng: -74.9357583
+  website: "http://www.bensalemhistoricalsociety.com/"
+  phone: "215-639-6575"
+  admission: "UNKNOWN — confirm"
+  hours: "By appointment / scheduled open-house events only."
+  drive_min: 36
+  seasonal: true
+  appointment_only: true
+  source: "https://en.wikipedia.org/wiki/Growden_Mansion"
+  blurb: "One of the oldest structures in Bucks County (built 1681–1685), a stone manor on Neshaminy Creek linked to Joseph Galloway; NRHP-listed and operated as a museum by the Bensalem Township historical society."
+
+# ---- Princeton, Trenton & Hopewell (NJ) ----
+- id: national-guard-militia-museum-nj
+  name: "National Guard Militia Museum of New Jersey"
+  category: military
+  region: princeton
+  town: "Lawrenceville, NJ"
+  address: "151 Eggerts Crossing Road, Lawrenceville, NJ 08648"
+  lat: 40.271943
+  lng: -74.745597
+  website: "https://njmilitiamuseum.gov/lawrenceville"
+  phone: "609-671-2980"
+  admission: "Free (donations welcome)"
+  hours: "Mon–Fri 9am–3pm, Sat 10am–3pm (call ahead; ID required at the gate)."
+  drive_min: 38
+  seasonal: false
+  appointment_only: false
+  source: "https://njmilitiamuseum.gov/lawrenceville"
+  blurb: "A military-history museum inside an active NJ National Guard complex (ID and gate check-in required), covering NJ militia and National Guard history from colonial times through modern deployments."
+
+- id: meredith-havens-fire-museum
+  name: "Meredith Havens Fire Museum"
+  category: specialty
+  region: princeton
+  town: "Trenton, NJ"
+  address: "244 Perry Street, Trenton, NJ 08618"
+  lat: 40.223798
+  lng: -74.761090
+  website: "https://www.trentonnj.org/161/Meredith-Havens-Fire-Museum"
+  phone: "UNKNOWN — confirm"
+  admission: "Free — confirm"
+  hours: "Mon–Fri 8am–4pm — housed inside an active fire HQ, call ahead."
+  drive_min: 40
+  seasonal: false
+  appointment_only: false
+  source: "https://www.trentonnj.org/161/Meredith-Havens-Fire-Museum"
+  blurb: "Founded 1959, one of the largest fire-helmet collections on the East Coast, plus an 1850 Philadelphia-style double-decker hand pumper, at Trenton's fire department headquarters."
+
+- id: sarnoff-collection-tcnj
+  name: "The Sarnoff Collection at TCNJ"
+  category: specialty
+  region: princeton
+  town: "Ewing, NJ"
+  address: "Roscoe L. West Hall, TCNJ, 2000 Pennington Rd, Ewing, NJ 08628"
+  lat: 40.270956
+  lng: -74.777372
+  website: "https://davidsarnoff.tcnj.edu/"
+  phone: "UNKNOWN — confirm"
+  admission: "Free"
+  hours: "By appointment only — request a tour via the website."
+  drive_min: 38
+  seasonal: false
+  appointment_only: true
+  source: "https://davidsarnoff.tcnj.edu/visit/"
+  blurb: "A 6,000+ artifact collection on David Sarnoff, RCA and 20th-century electronics history — early handmade radios, TV cameras that went to the moon, a 1942 electron microscope, and the world's oldest blue LED."
+
+- id: tcnj-art-gallery
+  name: "TCNJ Art Gallery"
+  category: art
+  region: princeton
+  town: "Ewing, NJ"
+  address: "AIMM Building, TCNJ, 2000 Pennington Rd, Ewing, NJ 08628"
+  lat: 40.270956
+  lng: -74.777372
+  website: "https://tcnjartgallery.tcnj.edu/"
+  phone: "UNKNOWN — confirm"
+  admission: "Free"
+  hours: "Tue–Thu 12–7pm, Sun 1–3pm (academic calendar — closed during breaks, confirm)."
+  drive_min: 38
+  seasonal: true
+  appointment_only: false
+  source: "https://tcnjartgallery.tcnj.edu/about/hours/"
+  blurb: "TCNJ's on-campus gallery mounts five exhibitions a year — curated shows of national and international artists plus juried student and faculty exhibitions."
+
+- id: rider-university-art-gallery
+  name: "Rider University Art Gallery"
+  category: art
+  region: princeton
+  town: "Lawrenceville, NJ"
+  address: "Bart Luedeke Center, Rider University, 2083 Lawrenceville Rd, Lawrenceville, NJ 08648"
+  lat: 40.308115
+  lng: -74.717503
+  website: "https://www.rider.edu/about/offices-services/art-gallery"
+  phone: "UNKNOWN — confirm"
+  admission: "Free"
+  hours: "Tue–Thu 11am–7pm, Sun 12–4pm (academic calendar — confirm during breaks)."
+  drive_min: 36
+  seasonal: true
+  appointment_only: false
+  source: "https://www.rider.edu/about/offices-services/art-gallery"
+  blurb: "A campus gallery in Rider's student center presenting rotating contemporary-art exhibitions plus an annual juried student show."
+
+- id: tulpehaking-nature-center
+  name: "Tulpehaking Nature Center"
+  category: science-nature
+  region: princeton
+  town: "Hamilton, NJ"
+  address: "157 Westcott Avenue, Hamilton, NJ 08610"
+  lat: 40.191064
+  lng: -74.725469
+  website: "https://abbottmarshlands.org/nature-center/"
+  phone: "UNKNOWN — confirm"
+  admission: "Free"
+  hours: "Sun 12–4pm, Mon 10am–4pm; other days by appointment for programs."
+  drive_min: 41
+  seasonal: false
+  appointment_only: false
+  source: "https://abbottmarshlands.org/nature-center/"
+  blurb: "The gateway visitor center to the Abbott Marshlands freshwater tidal wetland, with rotating exhibit rooms on wetland ecology, watershed science, and Lenape archaeology."
+
+- id: west-windsor-history-museum
+  name: "West Windsor History Museum at Schenck Farmstead"
+  category: living-history
+  region: princeton
+  town: "West Windsor, NJ"
+  address: "50 Southfield Rd, West Windsor, NJ 08550"
+  lat: 40.279157
+  lng: -74.590356
+  website: "https://www.westwindsorhistory.com/museum.html"
+  phone: "609-751-4061"
+  admission: "Free — confirm"
+  hours: "Scheduled tours and periodic community open houses — call/email ahead, not walk-in."
+  drive_min: 39
+  seasonal: false
+  appointment_only: true
+  source: "https://www.westwindsorhistory.com/"
+  blurb: "A 1750s-era farmstead, one of central NJ's oldest farmed properties, run by the Historical Society of West Windsor as a working museum of the township's farming past."
+
+- id: historic-wicoff-house-museum
+  name: "Historic Wicoff House Museum"
+  category: house-museum
+  region: princeton
+  town: "Plainsboro, NJ"
+  address: "641 Plainsboro Rd, Plainsboro, NJ 08536"
+  lat: 40.333234
+  lng: -74.585312
+  website: "https://www.plainsboronj.com/792/Historic-Wicoff-House-Museum"
+  phone: "UNKNOWN — confirm"
+  admission: "Free"
+  hours: "Sundays 1–4pm, plus free monthly community events — confirm current schedule."
+  drive_min: 39
+  seasonal: false
+  appointment_only: false
+  source: "https://www.plainsboronj.com/792/Historic-Wicoff-House-Museum"
+  blurb: "An early Plainsboro farmhouse reopened as a township museum in 2019 for the town's centennial, with rotating local-history exhibits and community programs."
+
+- id: hightstown-east-windsor-historical-society
+  name: "Hightstown-East Windsor Historical Society (Ely House)"
+  category: house-museum
+  region: princeton
+  town: "Hightstown, NJ"
+  address: "164 N Main St, Hightstown, NJ 08520"
+  lat: 40.270973
+  lng: -74.522417
+  website: "https://hewhs.com/"
+  phone: "609-448-8388"
+  admission: "Free"
+  hours: "Open house 1st Sunday of the month, 1–3pm (spring/fall season; summer hiatus) — confirm."
+  drive_min: 40
+  seasonal: true
+  appointment_only: false
+  source: "https://hewhs.com/"
+  blurb: "The c.1850 Ely House and adjoining Camden & Amboy Railroad freight station, headquarters of the Hightstown-East Windsor Historical Society, with a 'John Bull' locomotive-era railroad history display."
+
+- id: kingston-locktenders-house
+  name: "Kingston Lock-tender's House"
+  category: house-museum
+  region: princeton
+  town: "Kingston, NJ"
+  address: "39 Old Lincoln Hwy, Kingston, NJ 08528"
+  lat: 40.373789
+  lng: -74.619683
+  website: "https://www.khsnj.org/"
+  phone: "UNKNOWN — confirm"
+  admission: "Free/donation"
+  hours: "Sat, Sun & major holidays 10am–4:30pm, Apr–Nov (closed Dec–Mar)."
+  drive_min: 33
+  seasonal: true
+  appointment_only: false
+  source: "https://www.khsnj.org/"
+  blurb: "A c.1830 D&R Canal lock-tender's house restored and operated by the Kingston Historical Society, with period rooms and canal-era displays."
+
+- id: port-mercer-canal-house
+  name: "Port Mercer Canal House"
+  category: house-museum
+  region: princeton
+  town: "Lawrence Township, NJ"
+  address: "4278 Quakerbridge Rd, Lawrenceville, NJ 08648"
+  lat: 40.301291
+  lng: -74.682812
+  website: "https://www.thelhs.org/port-mercer-canal-house"
+  phone: "732-873-3050"
+  admission: "Free/donation — confirm"
+  hours: "By appointment only."
+  drive_min: 37
+  seasonal: false
+  appointment_only: true
+  source: "https://www.thelhs.org/port-mercer-canal-house"
+  blurb: "An 1830s D&R Canal bridge-tender's house, restored by the Lawrence Historical Society (which also runs the Brearley House) to its 1890–1920 appearance; tours by appointment."
+
+- id: benjamin-temple-house
+  name: "Benjamin Temple House"
+  category: house-museum
+  region: princeton
+  town: "Ewing, NJ"
+  address: "27 Federal City Road, Ewing, NJ 08638"
+  lat: 40.2540
+  lng: -74.7965
+  website: "https://www.ethps.org/the-temple-house"
+  phone: "609-883-2455"
+  admission: "Free — confirm"
+  hours: "Wednesdays 10am–2pm; 1st Sunday of the month 2–4pm; other times by appointment."
+  drive_min: 35
+  seasonal: false
+  appointment_only: false
+  source: "https://www.ethps.org/the-temple-house"
+  blurb: "A c.1750 farmhouse (aka Old Ryan Farm) built by Benjamin Temple, brother-in-law of Declaration signer John Hart; operated as a house museum and library by the Ewing Township Historic Preservation Society at Drake Farm Park."
+
+- id: john-abbott-ii-house
+  name: "John Abbott II House"
+  category: house-museum
+  region: princeton
+  town: "Hamilton, NJ"
+  address: "2200 Kuser Road, Hamilton Township, NJ 08690"
+  lat: 40.203889
+  lng: -74.680639
+  website: "https://hamiltonhistorical.org/"
+  phone: "609-585-1686"
+  admission: "Free/donation — confirm"
+  hours: "Weekends noon–4:30pm, seasonally Mar–Dec (closed Easter Sunday & Thanksgiving weekend)."
+  drive_min: 42
+  seasonal: true
+  appointment_only: false
+  source: "https://hamiltonhistorical.org/our-museum"
+  blurb: "The flagship house museum of the Historical Society of Hamilton Township — an 18th-century farmhouse in Veterans Park with Civil War and Lenape/Delaware artifact exhibits. On the outer edge of the radius."
+
+- id: kuser-farm-mansion
+  name: "Kuser Farm Mansion"
+  category: house-museum
+  region: princeton
+  town: "Hamilton, NJ"
+  address: "390 Newkirk Avenue, Hamilton, NJ 08610"
+  lat: 40.2231
+  lng: -74.7767
+  website: "https://www.hamiltonnj.com/kusermansion"
+  phone: "609-890-3630"
+  admission: "Free (donations welcome)"
+  hours: "Guided tours Sat–Sun 11am–4pm, mid-April through early October (last walk-through 2:15pm)."
+  drive_min: 42
+  seasonal: true
+  appointment_only: false
+  source: "https://www.hamiltonnj.com/kusermansion"
+  blurb: "An 1892 Queen Anne 'summer cottage' of the Kuser family (Fox Film Corp./Lenox/Mercer Motor Car fortune), on 22 acres of the original estate, with a notable 1890s in-home theater. On the outer edge of the radius."
