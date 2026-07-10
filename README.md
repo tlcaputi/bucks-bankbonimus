@@ -63,7 +63,14 @@ mv _Gemfile.bak Gemfile
 
 ## Deploy
 
-GitHub Pages (classic) builds from the default branch. Repo: `tlcaputi/bucks-bankbonimus`
-(create it). DNS: Cloudflare CNAME `bucks` → `tlcaputi.github.io` (DNS-only), the `CNAME` file
-pins the custom domain. Commit + push to deploy; confirm the Actions build is green, then add
-the custom domain in the repo's Pages settings and enable Enforce HTTPS.
+**Live at https://bucks.bankbonimus.com** (deployed 2026-07-09). GitHub Pages builds from
+`main`. Repo: `tlcaputi/bucks-bankbonimus` (public). Commit + push to deploy; confirm the
+build with `gh api repos/tlcaputi/bucks-bankbonimus/pages/builds/latest -q '.status'`.
+
+**DNS / HTTPS note:** the Cloudflare CNAME `bucks` → `tlcaputi.github.io` is **PROXIED
+(orange cloud)**, *unlike* the DNS-only sibling sites. GitHub's Pages Let's-Encrypt cert
+stalled at `authorization_created`, so the domain is proxied through Cloudflare for HTTPS
+(zone SSL mode = `full`, GitHub "Enforce HTTPS" off → Cloudflare serves its own
+`*.bankbonimus.com` cert, no redirect loop). To revert to the DNS-only pattern once GitHub's
+cert issues: set the record `proxied:false` and enable Enforce HTTPS in Pages settings.
+Full history/handoff: `.CHANGELOG/CURRENT_STATE.md` (gitignored).
